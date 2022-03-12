@@ -12,9 +12,9 @@
 				<li :class="$route.path=='/games'?'active':''">
 					<router-link to="/games">Games</router-link>
 				</li>
-				<!--<li :class="$route.path=='/more'?'active':''">
-					<router-link to="/more">more</router-link>
-				</li>-->
+				<li :class="$route.path=='/more'?'active':''">
+					<router-link to="/more">Lucky Meta Wiki</router-link>
+				</li>
 			</ul>
 		</div>
 	</div>
