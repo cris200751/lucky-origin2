@@ -10,7 +10,7 @@
       <li class="social-network">
         <img src="@/assets/images/instagram.png" />
       </li>
-      <li @click="jumpclick('https://discord.gg/JTstQ8Tm')" class="social-network">
+      <li @click="jumpclick('https://discord.gg/UqH7GwwV89')" class="social-network">
         <img src="@/assets/images/Descord.png" />
       </li>
       <li @click="jumpclick('https://www.youtube.com/channel/UCl66czQcUxBU-iZ9yYjBclA')" class="social-network">
@@ -69,10 +69,16 @@ export default {
   margin-top: 12px;
 }
 
+/* @media only screen and (max-width: 768px) {
+  .list-social-network {
+      margin-left: 0%;
+  }
+} */
+
 .social-network img {
-  width: 40px;
+  width: 60%;
   height: auto;
-  margin: 0 15px;
+  margin: 0 20%;
 }
 
 .header .frame {

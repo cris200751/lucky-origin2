@@ -28,5 +28,6 @@ export default new Router({
 			name: 'more',
 			component: more,
 	}
-	]
+	],
+	mode: "history"
 })

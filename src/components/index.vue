@@ -6,32 +6,59 @@
         <div class="list" id="imglist">
           <ul id="indexlist">
             <li>
-              <img class="trans-up delay-10" src="../../static/images/1e.png" />
+              <a href="#introduce">
+                <img
+                  class="trans-up delay-10"
+                  src="../../static/images/1e.png"
+                />
+              </a>
               <!--<p>SPORTSBOOK</p>-->
             </li>
             <li>
-              <img class="trans-up delay-15" src="../../static/images/2e.png" />
+              <a href="#nfts">
+                <img
+                  class="trans-up delay-15"
+                  src="../../static/images/2e.png"
+                />
+              </a>
               <!--<p>play to earn</p>-->
             </li>
             <li>
-              <img class="trans-up delay-20" src="../../static/images/3e.png" />
+              <a href="#introduce">
+                <img
+                  class="trans-up delay-20"
+                  src="../../static/images/3e.png"
+                />
+              </a>
               <!--<p>casino</p>-->
             </li>
           </ul>
           <ul id="indexlist2">
             <li>
-              <img class="trans-up delay-05" src="../../static/images/4e.png" />
+              <a href="#tokenomics">
+                <img
+                  class="trans-up delay-05"
+                  src="../../static/images/4e.png"
+                />
+              </a>
               <!--<p>LIVE CASINO</p>-->
             </li>
             <li>
-              <img
-                class="trans-up delay-10"
-                src="../../static/images/5ec.png"
-              />
+              <a href="#tokenomics">
+                <img
+                  class="trans-up delay-10"
+                  src="../../static/images/5ec.png"
+                />
+              </a>
               <!--<p>slots</p>-->
             </li>
             <li>
-              <img class="trans-up delay-15" src="../../static/images/6e.png" />
+              <a href="#tokenomics">
+                <img
+                  class="trans-up delay-15"
+                  src="../../static/images/6e.png"
+                />
+              </a>
               <!--<p>social games</p>-->
             </li>
           </ul>

@@ -19,7 +19,12 @@ export default {
  font-size: 0.75rem;
  font-weight: 400;
  background: #000000;
+ overflow-x: hidden;
 /*position: relative;*/ 
+}
+
+html {
+  scroll-behavior: smooth;
 }
 /*html,body,#app{
 	height: 100%;

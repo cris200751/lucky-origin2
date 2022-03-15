@@ -1,8 +1,8 @@
 <template>
-  <section>
+  <section id="tokenomics">
     <div class="section-container">
       <h1 class="title">Tokenomics</h1>
-      <img class="tokenomics-img" src="@/assets/images/tokenomic-2.png" />
+      <img class="tokenomics-img" src="@/assets/images/tokenomic-3.png" />
     </div>
   </section>
 </template>
@@ -14,21 +14,23 @@ export default {};
   max-width: 1080px;
   margin: auto;
   padding-top: 40px;
-  background: url('../../assets/images/background-4.jpg');
-  /* background-size: cover; */
+  background: url("../../assets/images/background-4.jpg");
+  background-size: 400%;
   /* background: #0B0D32; */
 }
 
 .title {
   text-align: center;
-  margin-bottom: -70px;
+  margin-bottom: 30px;
   font-size: 42px;
   font-weight: 600;
   font-family: Magistral-Bold;
 }
 
 .tokenomics-img {
-    align-self: center;
-    transform: scale(0.8)
+  margin-left: 10%;
+  width: 80%;
+  height: auto;
+  margin-bottom: 40px;
 }
 </style>

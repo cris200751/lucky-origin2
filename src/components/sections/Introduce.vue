@@ -1,5 +1,5 @@
 <template>
-  <section>
+  <section id="introduce">
     <div class="section-container">
       <h1 class="title">Introducing Lucky Meta</h1>
       <div class="video-mask">
