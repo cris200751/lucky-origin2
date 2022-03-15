@@ -1,20 +1,46 @@
 <template>
   <div class="header">
     <ul class="list-social-network">
-      <li @click="jumpclick('https://twitter.com/LuckyMetaverse')" class="social-network">
-        <img src="@/assets/images/twitter.png" />
+      <li
+        @click="jumpclick('https://twitter.com/LuckyMetaverse')"
+        class="social-network"
+      >
+        <img class="no-color" src="@/assets/images/twitter-no-color.png" />
+        <img class="color" src="@/assets/images/twitter.png" />
       </li>
-      <li @click="jumpclick('https://www.facebook.com/LuckyMeta-102656795685121')" class="social-network">
-        <img src="@/assets/images/facebook.png" />
+      <li
+        @click="jumpclick('https://www.facebook.com/LuckyMeta-102656795685121')"
+        class="social-network"
+      >
+        <img class="no-color" src="@/assets/images/facebook-no-color.png" />
+        <img class="color" src="@/assets/images/facebook.png" />
       </li>
       <li class="social-network">
-        <img src="@/assets/images/instagram.png" />
+        <img class="no-color" src="@/assets/images/instagram-no-color.png" />
+        <img class="color" src="@/assets/images/instagram.png" />
       </li>
-      <li @click="jumpclick('https://discord.gg/UqH7GwwV89')" class="social-network">
-        <img src="@/assets/images/Descord.png" />
+      <li
+        @click="jumpclick('https://discord.gg/UqH7GwwV89')"
+        class="social-network"
+      >
+        <img class="no-color" src="@/assets/images/discord-no-color.png" />
+        <img class="color" src="@/assets/images/discord.png" />
       </li>
-      <li @click="jumpclick('https://www.youtube.com/channel/UCl66czQcUxBU-iZ9yYjBclA')" class="social-network">
-        <img src="@/assets/images/youtube.png" />
+      <li
+        @click="
+          jumpclick('https://www.youtube.com/channel/UCl66czQcUxBU-iZ9yYjBclA')
+        "
+        class="social-network"
+      >
+        <img class="no-color" src="@/assets/images/youtube-no-color.png" />
+        <img class="color" src="@/assets/images/youtube.png" />
+      </li>
+      <li
+        @click="jumpclick('https://t.me/luckymetaverse')"
+        class="social-network"
+      >
+        <img class="no-color" src="@/assets/images/telegram-no-color.png" />
+        <img class="color" src="@/assets/images/telegram.png" />
       </li>
     </ul>
 
@@ -75,10 +101,26 @@ export default {
   }
 } */
 
+.social-network {
+  width: scale(100%/6);
+}
+
 .social-network img {
-  width: 60%;
-  height: auto;
-  margin: 0 20%;
+  width: 40px;
+  height: 40px;
+  margin: 0 20px;
+}
+
+img.color {
+  display: none;
+}
+
+.social-network:hover .no-color {
+  display: none;
+}
+
+.social-network:hover .color {
+  display: block;
 }
 
 .header .frame {
