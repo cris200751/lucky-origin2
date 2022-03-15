@@ -2,23 +2,40 @@
   <section>
     <div class="section-container">
       <h1 class="title">NFTs</h1>
-      <p class="description">
-        YOUR LUCKY NFT WILL APPEAR IN WHATEVER ADDRESS, OR CONNECTED WALLET YOU USED TO
-        PURCHASE THE LUCKY. YOU CAN SEE YOUR FRESHLY MINTED NFT CARD DIRECTLY ON YOUR
-        OPENSEA.IO ACCOUNT.
-      </p>
+      <!-- <p class="description">
+        YOUR LUCKY NFT WILL APPEAR IN WHATEVER ADDRESS, OR CONNECTED WALLET YOU
+        USED TO PURCHASE THE LUCKY. YOU CAN SEE YOUR FRESHLY MINTED NFT CARD
+        DIRECTLY ON YOUR OPENSEA.IO ACCOUNT.
+      </p> -->
       <ul class="list-nft">
         <li class="nft-item">
-          <img src="@/assets/images/LMG.png" />
-          <p class="nft-name">LMG</p>
+          <img src="@/assets/images/NFT-1.png" />
+          <!-- <p class="nft-name">LMG</p> -->
         </li>
         <li class="nft-item">
-          <img src="@/assets/images/LMT.png" />
-          <p class="nft-name">LMT</p>
+          <img src="@/assets/images/NFT-2.png" />
+          <!-- <p class="nft-name">LMT</p> -->
         </li>
         <li class="nft-item">
-          <img src="@/assets/images/LMV.png" />
-          <p class="nft-name">LMV</p>
+          <img src="@/assets/images/NFT-3.png" />
+          <!-- <p class="nft-name">LMV</p> -->
+        </li>
+      </ul>
+      <ul class="list-nft">
+        <li class="nft-item">
+          <img src="@/assets/images/NFT-4.png" />
+        </li>
+        <li class="nft-item">
+          <img src="@/assets/images/NFT-5.png" />
+          <!-- <p class="nft-name">LMG</p> -->
+        </li>
+        <li class="nft-item">
+          <img src="@/assets/images/NFT-6.png" />
+          <!-- <p class="nft-name">LMT</p> -->
+        </li>
+        <li class="nft-item">
+          <img src="@/assets/images/NFT-7.png" />
+          <!-- <p class="nft-name">LMV</p> -->
         </li>
       </ul>
     </div>
@@ -40,7 +57,7 @@ export default {};
 
 .title {
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 110px;
   font-size: 42px;
   font-weight: 600;
   font-family: Magistral-Bold;
@@ -52,7 +69,7 @@ export default {};
   line-height: 34px;
   letter-spacing: 0.05em;
   text-align: center;
-  margin-bottom: 100px;
+  margin-bottom: 118px;
   padding: 0 144px;
   font-family: Magistral-Medium;
 }
@@ -60,10 +77,16 @@ export default {};
 .list-nft {
   display: flex;
   justify-content: center;
+  margin-bottom: 40px;
 }
 
 .nft-item {
-  margin: 0 65.5px;
+  margin: 0 37.5px;
+}
+
+.nft-item img {
+  width: 150px;
+  height: auto;
 }
 
 .nft-name {
