@@ -7,7 +7,31 @@
         multiple mechanisms, there are more surprises waiting for you to
         discover
       </p>
-      <ul class="list-nft-meta">
+      <div class="list-item-meta-container">
+        <el-row>
+          <el-col :span="5">
+            <img src="@/assets/images/NFTs.png" />
+          </el-col>
+          <el-col :span="9">
+            <img src="@/assets/images/Defi.png" />
+          </el-col>
+          <el-col :span="10">
+            <img src="@/assets/images/Play to earn.png" />
+          </el-col>
+        </el-row>
+        <el-row>
+          <el-col :span="5">
+            <p class="nft-meta-item-text">NFTs</p>
+          </el-col>
+          <el-col :span="9">
+            <p class="nft-meta-item-text">Defi</p>
+          </el-col>
+          <el-col :span="10">
+            <p class="nft-meta-item-text">Play to earn</p>
+          </el-col>
+        </el-row>
+      </div>
+      <!-- <ul class="list-nft-meta">
         <li class="nft-meta-item">
           <img src="@/assets/images/NFTs.png" />
         </li>
@@ -28,7 +52,7 @@
         <li class="nft-meta-item" style="width: 388px">
           <p class="nft-meta-item-text">Play to earn</p>
         </li>
-      </ul>
+      </ul> -->
     </div>
   </section>
 </template>
@@ -66,11 +90,38 @@ export default {};
   font-family: Magistral-Medium;
 }
 
-.list-nft-meta {
+@media only screen and (max-width: 1080px) {
+  .title {
+    font-size: 0.4rem;
+  }
+
+  .description {
+    font-size: 0.2rem;
+    line-height: 0.3rem;
+    padding: 0 0.7rem;
+  }
+}
+
+.list-item-meta-container {
+  width: 90%;
+  margin: auto;
+}
+
+.el-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.el-col img {
+  width: 80%;
+  margin-left: 10%;
+}
+
+/* .list-nft-meta {
   display: flex;
   justify-content: center;
   align-items: center;
-  transform: scale(0.8);
 }
 
 .nft-meta-item:nth-child(1) {
@@ -81,6 +132,14 @@ export default {};
   margin-right: 50px;
 }
 
+.nft-meta-item:nth-child(2) {
+  margin-right: 50px;
+}
+
+.nft-meta-item img {
+  width: 80%;
+} */
+
 .nft-meta-item-text {
   font-weight: 500;
   font-size: 38px;
@@ -89,5 +148,11 @@ export default {};
   letter-spacing: 0.035em;
   text-transform: capitalize;
   font-family: Magistral-Medium;
+}
+
+@media only screen and (max-width: 1080px) {
+  .nft-meta-item-text {
+    font-size: 0.3rem;
+  }
 }
 </style>

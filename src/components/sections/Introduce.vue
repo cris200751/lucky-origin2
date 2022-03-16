@@ -44,7 +44,7 @@ export default {
     handleVideo() {
       this.$refs["video-link"].style.display = "none";
       this.$refs.video.style.display = "block";
-      this.$refs.video.play()
+      this.$refs.video.play();
     },
   },
 };
@@ -85,6 +85,18 @@ section {
   font-family: Magistral-Medium;
 }
 
+@media only screen and (max-width: 1080px) {
+  .title {
+    font-size: 0.4rem;
+  }
+
+  .description {
+    font-size: 0.15rem;
+    line-height: 0.3rem;
+    padding: 0 0.7rem;
+  }
+}
+
 .video-mask {
   padding: 0 160px;
 }
@@ -94,7 +106,6 @@ section {
   background-repeat: no-repeat;
   background-size: contain;
   border-radius: 20px;
-  /* width: 760px; */
   height: 346px;
   padding: 10px;
   display: flex;
@@ -128,6 +139,26 @@ section {
   height: 366px;
   display: none;
   margin: auto;
+}
+
+@media only screen and (max-width: 1080px) {
+  .video-mask {
+    padding: 0 0.8rem;
+  }
+
+  .video-mask-inner-wrapper {
+    height: 46vw;
+  }
+
+  .video-mask-inner-wrapper img {
+    width: 10vw;
+    height: 10vw;
+  }
+
+  .video {
+    width: 90vw;
+    height: 45vw;
+  }
 }
 
 .pink-frame {

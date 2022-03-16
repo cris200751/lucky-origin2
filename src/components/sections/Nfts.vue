@@ -75,6 +75,18 @@ export default {};
   font-family: Magistral-Medium;
 }
 
+@media only screen and (max-width: 1080px) {
+  .title {
+    font-size: 0.4rem;
+  }
+
+  .description {
+    font-size: 0.2rem;
+    line-height: 0.3rem;
+    padding: 0 0.7rem;
+  }
+}
+
 .list-nft {
   display: flex;
   justify-content: center;

@@ -27,6 +27,12 @@ export default {};
   font-family: Magistral-Bold;
 }
 
+@media only screen and (max-width: 1080px) {
+  .title {
+    font-size: 0.4rem;
+  }
+}
+
 .tokenomics-img {
   margin-left: 10%;
   width: 80%;

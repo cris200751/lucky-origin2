@@ -587,7 +587,7 @@ export default {
   .main .pingt img:nth-child(3) {
     width: 4.37rem;
     margin-top: -0.7rem;
-    margin-bottom: 0.86rem;
+    /* margin-bottom: 0.86rem; */
   }
   .main .intoset .intoimg {
     display: none;
