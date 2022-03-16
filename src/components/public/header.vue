@@ -90,19 +90,27 @@ export default {
 }
 
 .list-social-network {
-  display: inline-flex;
+  display: flex;
   margin-left: 44%;
   margin-top: 12px;
+  width: 40%;
 }
 
-/* @media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1080px) {
   .list-social-network {
-      margin-left: 0%;
+      margin-left: 22%;
   }
-} */
+}
+
+@media only screen and (max-width: 767px) {
+  .list-social-network {
+      margin-left: 0;
+      width: 100%;
+  }
+}
 
 .social-network {
-  width: scale(100%/6);
+  width: calc(100%/6);
 }
 
 .social-network img {
