@@ -22,8 +22,6 @@
         <img class="no-color" src="@/assets/images/instagram-no-color.png" />
         <img class="color" src="@/assets/images/instagram.png" />
       </li>
-    </ul>
-    <ul class="list-social-network">
       <li
         @click="jumpclick('https://discord.gg/UqH7GwwV89')"
         class="social-network"
@@ -98,10 +96,10 @@ export default {
   margin-left: 44%;
   margin-top: 12px;
   width: fit-content;
-  margin: auto;
+  /* margin: auto; */
 }
 
-/* @media only screen and (max-width: 1080px) {
+@media only screen and (max-width: 1080px) {
   .list-social-network {
     margin-left: 22%;
   }
@@ -112,11 +110,11 @@ export default {
     margin-left: 0;
     width: 100%;
   }
-} */
+}
 
-/* .social-network {
-  width: calc(100% / 3);
-} */
+.social-network {
+  width: calc(100% / 6);
+}
 
 .social-network img {
   width: 40px;
