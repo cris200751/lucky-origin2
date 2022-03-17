@@ -1,6 +1,6 @@
 <template>
   <div class="header">
-    <ul class="list-social-network">
+    <!-- <ul class="list-social-network">
       <li
         @click="jumpclick('https://twitter.com/LuckyMetaverse')"
         class="social-network"
@@ -45,7 +45,7 @@
         <img class="no-color" src="@/assets/images/telegram-no-color.png" />
         <img class="color" src="@/assets/images/telegram.png" />
       </li>
-    </ul>
+    </ul> -->
     <div class="frame">
       <router-link to="/"
         ><img class="logo" src="../../../static/images/Logp.png"
@@ -62,7 +62,7 @@
         </li>
         <li>
           <a href="https://luckymeta.gitbook.io/lucky-meta-white-paper/"
-            >Lucky Meta Wiki</a
+            >Wiki</a
           >
         </li>
       </ul>
@@ -91,21 +91,21 @@ export default {
   background-size: 100% 100%;
 }
 
-.list-social-network {
+/* .list-social-network {
   display: flex;
-  margin-left: 44%;
+  margin-left: 33%;
   margin-top: 12px;
   width: fit-content;
-  /* margin: auto; */
-}
+  margin: auto;
+} */
 
-@media only screen and (max-width: 1080px) {
+/* @media only screen and (max-width: 1080px) {
   .list-social-network {
     margin-left: 22%;
   }
-}
+} */
 
-@media only screen and (max-width: 767px) {
+/* @media only screen and (max-width: 767px) {
   .list-social-network {
     margin-left: 0;
     width: 100%;
@@ -132,11 +132,11 @@ img.color {
 
 .social-network:hover .color {
   display: block;
-}
+} */
 
 .header .frame {
   display: flex;
-  /* padding-top: 78.5px; */
+  padding-top: 78.5px;
   width: 65%;
   margin: 0 auto;
 }
