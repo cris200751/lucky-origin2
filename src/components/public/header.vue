@@ -15,10 +15,15 @@
         <img class="no-color" src="@/assets/images/facebook-no-color.png" />
         <img class="color" src="@/assets/images/facebook.png" />
       </li>
-      <li class="social-network">
+      <li
+        @click="jumpclick('https://www.instagram.com/luckymeta_office/')"
+        class="social-network"
+      >
         <img class="no-color" src="@/assets/images/instagram-no-color.png" />
         <img class="color" src="@/assets/images/instagram.png" />
       </li>
+    </ul>
+    <ul class="list-social-network">
       <li
         @click="jumpclick('https://discord.gg/UqH7GwwV89')"
         class="social-network"
@@ -43,7 +48,6 @@
         <img class="color" src="@/assets/images/telegram.png" />
       </li>
     </ul>
-
     <div class="frame">
       <router-link to="/"
         ><img class="logo" src="../../../static/images/Logp.png"
@@ -93,25 +97,26 @@ export default {
   display: flex;
   margin-left: 44%;
   margin-top: 12px;
-  width: 40%;
+  width: fit-content;
+  margin: auto;
 }
 
-@media only screen and (max-width: 1080px) {
+/* @media only screen and (max-width: 1080px) {
   .list-social-network {
-      margin-left: 22%;
+    margin-left: 22%;
   }
 }
 
 @media only screen and (max-width: 767px) {
   .list-social-network {
-      margin-left: 0;
-      width: 100%;
+    margin-left: 0;
+    width: 100%;
   }
-}
+} */
 
-.social-network {
-  width: calc(100%/6);
-}
+/* .social-network {
+  width: calc(100% / 3);
+} */
 
 .social-network img {
   width: 40px;

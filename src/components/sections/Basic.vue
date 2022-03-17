@@ -61,8 +61,6 @@ export default {};
 </script>
 <style scoped>
 .section-container {
-  max-width: 1080px;
-  margin: auto;
   padding-top: 33px;
   padding-bottom: 70px;
   background: url("../../assets/images/background-3.jpg");
@@ -71,33 +69,17 @@ export default {};
 }
 
 .title {
-  text-align: center;
   margin-bottom: 30px;
   padding-bottom: 30px;
-  font-size: 42px;
-  font-weight: 600;
-  font-family: Magistral-Bold;
 }
 
 .description {
-  font-weight: 600;
-  font-size: 20px;
-  line-height: 34px;
-  letter-spacing: 0.05em;
-  text-align: center;
   margin-bottom: 100px;
   padding: 0 144px;
-  font-family: Magistral-Medium;
 }
 
 @media only screen and (max-width: 1080px) {
-  .title {
-    font-size: 0.4rem;
-  }
-
   .description {
-    font-size: 0.2rem;
-    line-height: 0.3rem;
     padding: 0 0.7rem;
   }
 }

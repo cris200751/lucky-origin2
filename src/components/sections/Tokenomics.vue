@@ -11,8 +11,6 @@ export default {};
 </script>
 <style scoped>
 .section-container {
-  max-width: 1080px;
-  margin: auto;
   padding-top: 40px;
   background: url("../../assets/images/background-4.jpg");
   background-size: 400%;
@@ -20,17 +18,7 @@ export default {};
 }
 
 .title {
-  text-align: center;
   margin-bottom: 30px;
-  font-size: 42px;
-  font-weight: 600;
-  font-family: Magistral-Bold;
-}
-
-@media only screen and (max-width: 1080px) {
-  .title {
-    font-size: 0.4rem;
-  }
 }
 
 .tokenomics-img {

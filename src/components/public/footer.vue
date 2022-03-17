@@ -87,7 +87,10 @@
             <img class="no-color" src="@/assets/images/facebook-no-color.png" />
             <img class="color" src="@/assets/images/facebook.png" />
           </li>
-          <li class="social-network">
+          <li
+            @click="jumpclick('https://www.instagram.com/luckymeta_office/')"
+            class="social-network"
+          >
             <img
               class="no-color"
               src="@/assets/images/instagram-no-color.png"
@@ -322,7 +325,7 @@ export default {
 }
 
 .footer .bottom .right ul .color {
-	display: none;
+  display: none;
 }
 
 .footer .bottom .right ul li:hover .no-color {
