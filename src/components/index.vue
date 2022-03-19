@@ -111,15 +111,6 @@
     <tokenomics />
     <partner />
     <faq />
-    <!-- <div class="faq" id="FAQ">
-      <h1>FAQ</h1>
-      <ul>
-        <li v-for="(item, index) in faq" @click="active = index">
-          <p><img src="../../static/images/smalllogo.png" />{{ item.title }}</p>
-          <div v-if="item.del != ''" v-html="item.del"></div>
-        </li>
-      </ul>
-    </div> -->
     <Publicfooter></Publicfooter>
   </div>
 </template>
@@ -154,41 +145,6 @@ export default {
   },
   data() {
     return {
-      faq: [
-        {
-          title: "What is LuckyMeta?",
-          del: "LuckyMeta is the Promised Land for Metaverse Citizen, to enjoy the Ultimate Entertainment in the Metaverse, while earning cryptocurrency at the same time. You can know more about it in our (White Paper) – click link to our White Paper .pdf",
-        },
-        {
-          title: "What is NFT?",
-          del: "A non-fungible token is a non-interchangeable unit of data stored on a blockchain, a form of digital ledger. NFTs can also be associated with reproducible digital files such as photos, videos, and audio. You an buy, own and trade for high price.",
-        },
-        {
-          title: "What is Metamask? (How to Mint)",
-          del: 'Metamask is a crypto-wallet that can store your Ethereum, and is needed to purchase and mint a Baby Ghost. Having a wallet gives you an Ethereum address and this is where your NFT will be stored. Learn more about Metamask and how easy it is to use over here! <a href="https://metamask.io">(https://metamask.io)</a>.',
-        },
-        {
-          title: "Buying NFT for the first time?",
-          del: 'Get the Metamask Chrome or Firefox extension. Load it with ETH through services that allow you to change your money to ETH like Coinbase, Binance or Kraken. Then, click the button "MINT" on the NFT’s banner to connect your wallet and approve the transaction on Metamask.',
-        },
-        {
-          title: "Where does my NFT go after I purchase?",
-          del: "Your Lucky NFT will appear in whatever address, or connected wallet you used to purchase the Lucky. You can see your freshly minted NFT card directly on your Opensea.io account.",
-        },
-        {
-          title: "What is LMT?",
-          del: "The LuckyMeta Token issued by LuckyMeta as a platform equity token to ensure that community members jointly own and share the success of LuckyMeta",
-        },
-        {
-          title: "What is LMG?",
-          del: "The LuckyMeta Gold issued by LuckyMeta is a game currency Token, which means that any player can experience the pleasure of decentralized betting in LuckyMeta for free",
-        },
-        {
-          title: "How to Play-to-Earn?",
-          del: "Just by playing games in LuckyMeta to earn LuckyMeta Gold and LuckyMeta Token. It’s so easy!",
-        },
-      ],
-      active: -1,
     };
   },
   mounted() {

@@ -30,10 +30,9 @@
                 <img class="meta-item-img" src="@/assets/images/defi.png" />
               </div>
               <p class="meta-item-description">
-                LuckyMeta will launch multiple common NFTs and rare NFTs at the
-                same time. Users can upgrade common NFTs by consuming LMG, and
-                upgrade rare NFTs by consuming LMT. The upgraded NFT will get
-                more rewards.
+                The full name of DeFi is Decentralized Finance, which is
+                "decentralized finance", and users can get more LMG/LMT by
+                adding liquidity.
               </p>
             </div>
           </el-col>
@@ -61,11 +60,7 @@
                 All the major affairs of LM are decided by the Decentralized
                 Autonomous Community Organization (DAO) by LMT voting. The
                 community plays a major role in leading towards success since
-                its establishment. The community is dedicated and loyal, and
-                they are not afraid to voice out their views about the platform.
-                One of the key reasons is the mining mechanism. Players mine
-                tokens when they play games, and they get a proportion of token
-                rewards when they pledge.
+                its establishment.
               </p>
             </div>
           </el-col>
@@ -142,7 +137,7 @@ export default {};
 
 .meta-item-number {
   font-size: 30px;
-  font-weight: 700;
+  font-family: Magistral-Bold;
   margin-bottom: 10px;
 }
 
@@ -150,7 +145,7 @@ export default {};
   display: flex;
   height: 70px;
   align-items: center;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 .meta-item-img {
