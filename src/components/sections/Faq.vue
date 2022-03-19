@@ -146,7 +146,7 @@ export default {};
 
 .faq-item p {
   font-family: Magistral-Book;
-  font-size: 16px;
+  font-size: 14px;
   margin-bottom: 7px;
 }
 </style>

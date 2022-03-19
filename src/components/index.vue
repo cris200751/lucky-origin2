@@ -132,7 +132,7 @@ import Faq from './sections/Faq.vue';
 import Introduce from "./sections/Introduce.vue";
 import LiveEntertaiment from './sections/LiveEntertaiment.vue';
 import Nfts from "./sections/Nfts.vue";
-import Partner from './sections/partner.vue';
+import Partner from './sections/Partner.vue';
 import SlotGame from './sections/SlotGame.vue';
 import SocialMedia from './sections/SocialMedia.vue';
 import Sportsbook from './sections/Sportsbook.vue';
