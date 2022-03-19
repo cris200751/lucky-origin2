@@ -6,7 +6,7 @@
         <div class="list" id="imglist">
           <ul id="indexlist">
             <li>
-              <a href="#introduce">
+              <a href="#sports-book">
                 <img
                   class="trans-up delay-10"
                   src="../../static/images/1e.png"
@@ -24,7 +24,7 @@
               <!--<p>play to earn</p>-->
             </li>
             <li>
-              <a href="#introduce">
+              <a href="#slot-game">
                 <img
                   class="trans-up delay-20"
                   src="../../static/images/3e.png"
@@ -35,7 +35,7 @@
           </ul>
           <ul id="indexlist2">
             <li>
-              <a href="#tokenomics">
+              <a href="#live-entertaiment">
                 <img
                   class="trans-up delay-05"
                   src="../../static/images/4e.png"
@@ -44,7 +44,7 @@
               <!--<p>LIVE CASINO</p>-->
             </li>
             <li>
-              <a href="#tokenomics">
+              <a href="#slot-game">
                 <img
                   class="trans-up delay-10"
                   src="../../static/images/5ec.png"
@@ -53,7 +53,7 @@
               <!--<p>slots</p>-->
             </li>
             <li>
-              <a href="#tokenomics">
+              <a href="#social-media">
                 <img
                   class="trans-up delay-15"
                   src="../../static/images/6e.png"
