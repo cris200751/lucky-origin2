@@ -1,6 +1,6 @@
 <template>
   <div class="footer">
-    <div class="payment">
+    <!-- <div class="payment">
       <h1>payment gateways</h1>
       <div class="footerimg">
         <div class="left">
@@ -48,7 +48,7 @@
           </b>
         </div>
       </div>
-    </div>
+    </div> -->
     <div class="bottom">
       <div class="left">
         <img src="../../../static/images/Logofooter.png" />

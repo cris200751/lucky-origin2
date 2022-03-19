@@ -1,51 +1,6 @@
 <template>
   <div class="header">
-    <!-- <ul class="list-social-network">
-      <li
-        @click="jumpclick('https://twitter.com/LuckyMetaverse')"
-        class="social-network"
-      >
-        <img class="no-color" src="@/assets/images/twitter-no-color.png" />
-        <img class="color" src="@/assets/images/twitter.png" />
-      </li>
-      <li
-        @click="jumpclick('https://www.facebook.com/LuckyMeta-102656795685121')"
-        class="social-network"
-      >
-        <img class="no-color" src="@/assets/images/facebook-no-color.png" />
-        <img class="color" src="@/assets/images/facebook.png" />
-      </li>
-      <li
-        @click="jumpclick('https://www.instagram.com/luckymeta_office/')"
-        class="social-network"
-      >
-        <img class="no-color" src="@/assets/images/instagram-no-color.png" />
-        <img class="color" src="@/assets/images/instagram.png" />
-      </li>
-      <li
-        @click="jumpclick('https://discord.gg/UqH7GwwV89')"
-        class="social-network"
-      >
-        <img class="no-color" src="@/assets/images/discord-no-color.png" />
-        <img class="color" src="@/assets/images/discord.png" />
-      </li>
-      <li
-        @click="
-          jumpclick('https://www.youtube.com/channel/UCl66czQcUxBU-iZ9yYjBclA')
-        "
-        class="social-network"
-      >
-        <img class="no-color" src="@/assets/images/youtube-no-color.png" />
-        <img class="color" src="@/assets/images/youtube.png" />
-      </li>
-      <li
-        @click="jumpclick('https://t.me/luckymetaverse')"
-        class="social-network"
-      >
-        <img class="no-color" src="@/assets/images/telegram-no-color.png" />
-        <img class="color" src="@/assets/images/telegram.png" />
-      </li>
-    </ul> -->
+    <router-link class="launch-app" to="/games">LAUNCH APP</router-link>
     <div class="frame">
       <router-link to="/"
         ><img class="logo" src="../../../static/images/Logp.png"
@@ -57,9 +12,9 @@
         <li :class="$route.path == '/roadmap' ? 'active' : ''">
           <router-link to="/roadmap">Roadmap</router-link>
         </li>
-        <li :class="$route.path == '/games' ? 'active' : ''">
+        <!-- <li :class="$route.path == '/games' ? 'active' : ''">
           <router-link to="/games">Games</router-link>
-        </li>
+        </li> -->
         <li>
           <a href="https://luckymeta.gitbook.io/lucky-meta-white-paper/"
             >Wiki</a
@@ -89,6 +44,7 @@ export default {
   background-image: url(../../../static/images/Headerbackground.png);
   background-repeat: no-repeat;
   background-size: 100% 100%;
+  position: relative;
 }
 
 /* .list-social-network {
@@ -133,6 +89,15 @@ img.color {
 .social-network:hover .color {
   display: block;
 } */
+.header .launch-app {
+  position: absolute;
+  font-family: Magistral-Medium;
+  font-size: 16.58px;
+  text-transform: uppercase;
+  color: #ffffff;
+  right: 2%;
+  bottom: 35%;
+}
 
 .header .frame {
   display: flex;

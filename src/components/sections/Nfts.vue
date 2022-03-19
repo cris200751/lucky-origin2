@@ -2,11 +2,11 @@
   <section id="nfts">
     <div class="section-container">
       <h1 class="title">NFTs</h1>
-      <!-- <p class="description">
-        YOUR LUCKY NFT WILL APPEAR IN WHATEVER ADDRESS, OR CONNECTED WALLET YOU
-        USED TO PURCHASE THE LUCKY. YOU CAN SEE YOUR FRESHLY MINTED NFT CARD
-        DIRECTLY ON YOUR OPENSEA.IO ACCOUNT.
-      </p> -->
+      <p class="description">
+        LuckyMeta will launch multiple common NFTs and rare NFTs at the same
+        time. Users can upgrade common NFTs by consuming LMG, and upgrade rare
+        NFTs by consuming LMT. The upgraded NFT will get more rewards.
+      </p>
       <ul class="list-nft" style="width: 65%">
         <li class="nft-item">
           <img src="@/assets/images/NFT-1.png" />
@@ -48,19 +48,19 @@ export default {};
 .section-container {
   padding-top: 33px;
   padding-bottom: 70px;
-  background: url("../../assets/images/background-2.png");
+  background: url("../../assets/images/nfts-background.png");
   background-size: cover;
   background-position: center;
   /* background: #0B0D32; */
 }
 
 .title {
-  margin-bottom: 110px;
+  margin-bottom: 30px;
 }
 
 .description {
-  margin-bottom: 118px;
-  padding: 0 144px;
+  margin-bottom: 40px;
+  padding: 0 121px;
 }
 
 @media only screen and (max-width: 1080px) {
@@ -72,7 +72,7 @@ export default {};
 .list-nft {
   display: flex;
   justify-content: center;
-  margin:auto;
+  margin: auto;
   margin-bottom: 40px;
 }
 

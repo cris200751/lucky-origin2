@@ -2,7 +2,7 @@
   <section id="tokenomics">
     <div class="section-container">
       <h1 class="title">Tokenomics</h1>
-      <img class="tokenomics-img" src="@/assets/images/tokenomic-3.png" />
+      <img class="tokenomics-img" src="@/assets/images/tokenomics.png" />
     </div>
   </section>
 </template>

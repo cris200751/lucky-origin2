@@ -102,19 +102,24 @@
       </div>
     </div>
     <introduce />
-    <nfts />
     <basic />
+    <nfts />
+    <slot-game />
+    <live-entertaiment />
+    <sportsbook />
+    <social-media />
     <tokenomics />
-    <div class="faq" id="FAQ">
+    <partner />
+    <faq />
+    <!-- <div class="faq" id="FAQ">
       <h1>FAQ</h1>
       <ul>
         <li v-for="(item, index) in faq" @click="active = index">
           <p><img src="../../static/images/smalllogo.png" />{{ item.title }}</p>
-          <!--<div v-if="active==index&&item.del!=''">{{item.del}}</div>-->
           <div v-if="item.del != ''" v-html="item.del"></div>
         </li>
       </ul>
-    </div>
+    </div> -->
     <Publicfooter></Publicfooter>
   </div>
 </template>
@@ -123,8 +128,14 @@
 import Publicfooter from "./public/footer";
 import Publicheader from "./public/header";
 import Basic from "./sections/Basic.vue";
+import Faq from './sections/Faq.vue';
 import Introduce from "./sections/Introduce.vue";
+import LiveEntertaiment from './sections/LiveEntertaiment.vue';
 import Nfts from "./sections/Nfts.vue";
+import Partner from './sections/partner.vue';
+import SlotGame from './sections/SlotGame.vue';
+import SocialMedia from './sections/SocialMedia.vue';
+import Sportsbook from './sections/Sportsbook.vue';
 import Tokenomics from "./sections/Tokenomics.vue";
 export default {
   components: {
@@ -134,6 +145,12 @@ export default {
     Basic,
     Tokenomics,
     Introduce,
+    SlotGame,
+    LiveEntertaiment,
+    Sportsbook,
+    SocialMedia,
+    Faq,
+    Partner,
   },
   data() {
     return {
