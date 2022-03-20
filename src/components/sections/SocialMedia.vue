@@ -60,8 +60,8 @@ export default {
 </script>
 <style scoped>
 .section-container {
-  padding-top: 260px;
-  padding-bottom: 230px;
+  padding-top: 255px;
+  padding-bottom: 245px;
   background: url("../../assets/images/social-media-background.png");
   background-size: cover;
   background-position: center;
@@ -69,7 +69,8 @@ export default {
 }
 
 .title {
-  margin-bottom: 30px;
+  margin-bottom: 20px;
+  font-size: 40px;
 }
 
 .description {
@@ -85,7 +86,7 @@ export default {
 
 .list-social-network {
   display: flex;
-  width: 70%;
+  width: 52%;
   margin: auto;
 }
 

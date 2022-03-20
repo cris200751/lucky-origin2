@@ -94,7 +94,7 @@ img.color {
   font-family: Magistral-Medium;
   font-size: 16.58px;
   text-transform: uppercase;
-  color: #ffffff;
+  color: #00ff22;
   right: 2%;
   bottom: 35%;
 }
