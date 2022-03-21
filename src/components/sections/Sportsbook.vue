@@ -35,6 +35,9 @@ export default {};
 }
 
 @media only screen and (max-width: 1080px) {
+  .title {
+    margin-bottom: 4.24rem;
+  }
   .description {
     padding: 0 0.7rem;
   }

@@ -20,6 +20,7 @@
             >Wiki</a
           >
         </li>
+        <li class="launch-app-menu"><router-link to="/games">LAUNCH APP</router-link></li>
       </ul>
     </div>
   </div>
@@ -99,6 +100,10 @@ img.color {
   bottom: 35%;
 }
 
+.header .frame ul li.launch-app-menu {
+  display: none;
+}
+
 .header .frame {
   display: flex;
   padding-top: 78.5px;
@@ -132,6 +137,10 @@ img.color {
   font-size: 16.58px;
   text-transform: uppercase;
   color: #ffffff;
+}
+
+.header .frame ul li.launch-app-menu a{ 
+  color: #00ff22;
 }
 
 .header .frame ul .active a {
@@ -236,6 +245,13 @@ img.color {
   .header .frame .lan div p {
     margin-left: 0.1rem;
     font-size: 0.14rem;
+  }
+  .header .launch-app {
+    display: none;
+  }
+
+  .header .frame ul li.launch-app-menu {
+    display: block;
   }
 }
 </style>

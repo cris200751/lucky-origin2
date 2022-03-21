@@ -98,4 +98,14 @@ export default {
   width: 80%;
   height: auto;
 }
+
+@media only screen and (max-width: 1080px) {
+  .title {
+    font-size: 0.4rem
+  }
+  .section-container {
+    padding-top: 1.55rem;
+    padding-bottom: 1.45rem;
+  }
+}
 </style>

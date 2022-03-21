@@ -15,9 +15,12 @@
               :key="faqIndex"
               class="faq-item"
             >
-              <p class="faq-question" @click="faq.active = !faq.active">
+              <a class="faq-question" @click.prevent="faq.active = !faq.active">
                 {{ faq.question }}
-              </p>
+              </a>
+              <!-- <p class="faq-question" @click="faq.active = !faq.active">
+                {{ faq.question }}
+              </p> -->
               <p class="faq-answer" v-if="faq.active">{{ faq.answer }}</p>
             </li>
           </ul>

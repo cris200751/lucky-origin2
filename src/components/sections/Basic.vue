@@ -82,8 +82,7 @@ export default {};
 }
 
 .title {
-  margin-bottom: 30px;
-  padding-bottom: 30px;
+  margin-bottom: 60px;
 }
 
 .description {
@@ -159,10 +158,28 @@ export default {};
 }
 
 @media only screen and (max-width: 1080px) {
+  .section-container {
+    padding-bottom: 0.9rem
+  }
+
+  .title {
+    margin-bottom: 0.6rem;
+  }
+
+  .description {
+    margin-bottom: 0.5rem;
+  }
+
+  .meta-item {
+    padding: 0.3rem 0.15rem;
+  }
+
   .meta-item::before {
     padding: 0.05rem;
+    border-radius: 0.2rem;
   }
   .meta-item-number {
+    font-size: 0.2rem;
     margin-bottom: 0.05rem;
   }
   .meta-item-img-con {
