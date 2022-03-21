@@ -203,7 +203,7 @@ img.color {
   display: block;
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 1080px) {
   .header {
     background: #110020;
     border-bottom: 2px solid #d800ff;

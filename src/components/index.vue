@@ -488,9 +488,10 @@ export default {
   display: none;
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 1080px) {
   .setting {
     background-size: 100% 100%;
+    width: 100%;
   }
   .main .list {
     /*background-size: 4.96rem;
