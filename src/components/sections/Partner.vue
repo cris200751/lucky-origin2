@@ -1,31 +1,31 @@
 <template>
   <section id="partner">
     <div class="section-container">
-       <h1 class="title">Partner</h1>
+       <h1 class="title">{{$t('Partner')}}</h1>
       <ul class="list-partner">
         <li class="partner-item">
-          <img class="color" src="@/assets/images/Mastercard.png" />
-          <p>MasterCard</p>
+          <img class="color" src="@/assets/images/BINANCE.png" />
+          <p>BINANCE</p>
         </li>
         <li class="partner-item">
-          <img class="color" src="@/assets/images/Visa.png" />
-          <p>Visa</p>
+          <img class="color" src="@/assets/images/COINMARKETCAP.png" />
+          <p>COINMARKETCAP</p>
         </li>
         <li class="partner-item">
-          <img class="color" src="@/assets/images/Polis.png" />
-          <p>Polis</p>
+          <img class="color" src="@/assets/images/COINGECKO.png" />
+          <p>CONINGECKO</p>
+        </li>
+        <li class="partner-item">
+          <img class="color" src="@/assets/images/PLAY2EARN.png" />
+          <p>PLAY2EARN</p>
+        </li>
+        <li class="partner-item">
+          <img class="color" src="@/assets/images/POLYGON.png" />
+          <p>POLYGON</p>
         </li>
         <li class="partner-item">
           <img class="color" src="@/assets/images/ETH.png" />
           <p>ETH</p>
-        </li>
-        <li class="partner-item">
-          <img class="color" src="@/assets/images/BTC.png" />
-          <p>BTC</p>
-        </li>
-        <li class="partner-item">
-          <img class="color" src="@/assets/images/USDT.png" />
-          <p>USDT</p>
         </li>
       </ul>
     </div>
@@ -36,10 +36,11 @@ export default {};
 </script>
 <style scoped>
 .title {
-  padding: 47.5px 0 29.5px;
+  padding: 47.5px 0 60px;
   color: #ffffff;
   text-align: center;
-  font-size: 19.57px;
+  font-weight: 700;
+  font-size: 42px;
   font-family: Magistral-Bold;
 }
 
@@ -56,22 +57,36 @@ export default {};
 
 .list-partner {
   display: flex;
-  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 70%;
   margin: auto;
 }
 
 .partner-item {
   text-align: center;
-  width: calc(100%/6);
+  width: calc((100% - 100px) / 3);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin-right: 50px;
+  margin-bottom: 80px;
+}
+
+.partner-item:nth-child(3n) {
+  margin-right: 0;
 }
 
 .partner-item img {
-  width: 50%;
+  width: 32%;
   height: auto;
 }
 
 .partner-item p {
-    font-size: 16px;
-    margin-top: 8px;
+  font-weight: 500;
+  font-size: 22px;
+  margin-top: 8px;
 }
 </style>

@@ -4,7 +4,7 @@
       <Publicheader></Publicheader>
       <div class="main">
         <div class="list" id="imglist">
-          <ul id="indexlist">
+          <ul id="indexlist" class="is-visible">
             <li>
               <a href="#sports-book">
                 <img
@@ -62,7 +62,7 @@
               <!--<p>social games</p>-->
             </li>
           </ul>
-          <div class="backgroundgif">
+          <div class="backgroundgif is-visible">
             <!--<img class="trans-upthree delay-25" src="../../static/images/chipsanddice.png" />-->
             <!--<img class="trans-uptwo" src="../../static/images/neonroulette.png" />-->
             <img class="trans-uptwo" src="../../static/images/22.gif" />
@@ -74,18 +74,9 @@
 					</div>-->
 
           <div class="info trans-up delay-30">
-            <p>
-              lucky metas are fierce creatures that<br />love to battle, build,
-              and hunt for treasure!
-            </p>
-            <p>
-              build up a collection and use<br />them across an ever expanding
-              universe<br />of Games!
-            </p>
-            <p>
-              lucky meta uses cutting edge technology<br />called blockchain to
-              reward players<br />for their engagement.
-            </p>
+            <p>{{ $t("info1") }}</p>
+            <p>{{ $t("info2") }}</p>
+            <p>{{ $t("info3") }}</p>
           </div>
         </div>
         <div class="pingt">
@@ -108,7 +99,12 @@
     <live-entertaiment />
     <sportsbook />
     <social-media />
+    <lucky-gold />
+    <lucky-token />
+    <lucky-vips />
     <tokenomics />
+    <company />
+    <team />
     <partner />
     <faq />
     <Publicfooter></Publicfooter>
@@ -119,15 +115,20 @@
 import Publicfooter from "./public/footer";
 import Publicheader from "./public/header";
 import Basic from "./sections/Basic.vue";
-import Faq from './sections/Faq.vue';
+import Faq from "./sections/Faq.vue";
 import Introduce from "./sections/Introduce.vue";
-import LiveEntertaiment from './sections/LiveEntertaiment.vue';
+import LiveEntertaiment from "./sections/LiveEntertaiment.vue";
 import Nfts from "./sections/Nfts.vue";
-import Partner from './sections/Partner.vue';
-import SlotGame from './sections/SlotGame.vue';
-import SocialMedia from './sections/SocialMedia.vue';
-import Sportsbook from './sections/Sportsbook.vue';
+import Partner from "./sections/Partner.vue";
+import SlotGame from "./sections/SlotGame.vue";
+import SocialMedia from "./sections/SocialMedia.vue";
+import Sportsbook from "./sections/Sportsbook.vue";
 import Tokenomics from "./sections/Tokenomics.vue";
+import LuckyGold from './sections/LuckyGold.vue';
+import LuckyToken from './sections/LuckyToken.vue';
+import LuckyVips from './sections/LuckyVip.vue';
+import Company from './sections/Company.vue';
+import Team from './sections/Team.vue';
 export default {
   components: {
     Publicfooter,
@@ -142,10 +143,14 @@ export default {
     SocialMedia,
     Faq,
     Partner,
+    LuckyGold,
+    LuckyToken,
+    LuckyVips,
+    Company,
+    Team
   },
   data() {
-    return {
-    };
+    return {};
   },
   mounted() {
     if (document.body.offsetWidth > 767) {
@@ -179,18 +184,18 @@ export default {
         window.pageYOffset ||
         document.documentElement.scrollTop ||
         document.body.scrollTop;
-      var offsetTop = $("#indexlist").offset().top;
-      if (scrollTop > offsetTop) {
-        $("#indexlist").addClass("is-visible");
-      }
+      // var offsetTop = $("#indexlist").offset().top;
+      // if (scrollTop > offsetTop) {
+      //   $("#indexlist").addClass("is-visible");
+      // }
       var offsetTop = document.querySelector("#indexlist2").offsetTop;
       if (scrollTop > offsetTop) {
         $("#indexlist2").addClass("is-visible");
       }
-      var offsetTop = document.querySelector("#imglist").offsetTop;
-      if (scrollTop > offsetTop) {
-        $("#imglist .backgroundgif").addClass("is-visible");
-      }
+      // var offsetTop = document.querySelector("#imglist").offsetTop;
+      // if (scrollTop > offsetTop) {
+      //   $("#imglist .backgroundgif").addClass("is-visible");
+      // }
       var offsetTop =
         Number(document.querySelector("#intoset").offsetTop) - 100;
       if (scrollTop > offsetTop) {
@@ -488,10 +493,9 @@ export default {
   display: none;
 }
 
-@media only screen and (max-width: 1080px) {
+@media only screen and (max-width: 767px) {
   .setting {
     background-size: 100% 100%;
-    width: 100%;
   }
   .main .list {
     /*background-size: 4.96rem;

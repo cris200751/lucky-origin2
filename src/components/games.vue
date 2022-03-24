@@ -2,7 +2,7 @@
 	<div>
 		<div class="setting">
 			<Publicheader ref="header"></Publicheader>
-			<div class="more">Coming soon</div>
+			<div class="more">{{$t('comingSoon')}}</div>
 			<Publicfooter></Publicfooter>
 		</div>
 	</div>

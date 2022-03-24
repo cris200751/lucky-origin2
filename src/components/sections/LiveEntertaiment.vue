@@ -1,15 +1,10 @@
 <template>
   <section id="live-entertaiment">
     <div class="section-container">
-      <h1 class="title">Live Entertaiment</h1>
+      <h1 class="title">{{$t('LiveEntertaiment')}}</h1>
       <img class="live-entertaiment-img" src="@/assets/images/live-entertaiment.png" />
       <p class="description">
-        The Live Entertainment hosts exciting games such as Monopoly Live, Deal
-        or No Deal, and the Wheel of Fortune. There are also various casino
-        games with live dealers, such as baccarat. All these games are
-        implemented in the form of smart contracts. Through the leading AR/VR
-        and the blockchain computing, we breakthrough the barriers of the
-        metaverse entertainment and the real-world entertainment.
+        {{$t('LiveContent')}}
       </p>
     </div>
   </section>

@@ -11,12 +11,12 @@
 								<span>q1</span>
 							</div>
 							<div class="right">
-								<p>1、Publish the official website and whitepaper with ecosystem, LMT and LMG tokens, roadmap, games and more;</p>
-								<p>2、Deploy DAPP in Polygon (or BSC), open the initial issuance of LMT and LMG tokens, and list 6 slot games;</p>
-								<p>3、Open Play-to-Earn functions for users in the platform;</p>
-								<p>4、Users can obtain income by staking LMT-USD for LP mining;</p>
-								<p>5、Users can obtain platform dividends by minting LMV, the member right token ;</p>
-								<p>6、Open the NFT Treasure Chests function, users can freely trade the NFT obtained, and obtain continuous income by holding the NFT.</p>
+								<p>{{$t('mapone1')}}</p>
+								<p>{{$t('mapone2')}}</p>
+								<p>{{$t('mapone3')}}</p>
+								<p>{{$t('mapone4')}}</p>
+								<p>{{$t('mapone5')}}</p>
+								<p>{{$t('mapone6')}}</p>
 							</div>
 						</div>
 						<img class="pc" src="../../static/images/1r.png" />
@@ -29,11 +29,11 @@
 								<span>q2</span>
 							</div>
 							<div class="right">
-								<p>1、List about 30+ games;</p>
-								<p>2、Open the invitation reward system and commission system;</p>
-								<p>3、Deploy DApps in more mainnets or Layer2 expansion networks;</p>
-								<p>4、More assets such as ETH, USDT, etc. will be added to the LuckyMeta platform to attract more players;</p>
-								<p>5、The built-in decentralized wallet LuckyWallet will be launched.</p>
+								<p>{{$t('maptwo1')}}</p>
+								<p>{{$t('maptwo2')}}</p>
+								<p>{{$t('maptwo3')}}</p>
+								<p>{{$t('maptwo4')}}</p>
+								<p>{{$t('maptwo5')}}</p>
 							</div>
 						</div>
 						<img class="pc" src="../../static/images/2r.png" />
@@ -46,12 +46,12 @@
 								<span>q3</span>
 							</div>
 							<div class="right">
-								<p>1、Build the LuckyMeta XR metaverse scene with a game hall in the digital three-dimensional parallel space;</p>
-								<p>2、List the first game in LuckyMeta XR metaverse;</p>
-								<p>3、Build LuckyMeta metaverse space in well-known metaverse virtual space (such as: Decentraland, SandBox and other platforms);</p>
-								<p>4、Open interface for more games so other game providers can quickly deploy their applications to the LuckyMeta platform;</p>
-								<p>5、Open the block booking system;</p>
-								<p>6、List more types and numbers of games.</p>
+								<p>{{$t('mapthree1')}}</p>
+								<p>{{$t('mapthree2')}}</p>
+								<p>{{$t('mapthree3')}}</p>
+								<p>{{$t('mapthree4')}}</p>
+								<p>{{$t('mapthree5')}}</p>
+								<p>{{$t('mapthree6')}}</p>
 							</div>
 						</div>
 						<img class="pc" src="../../static/images/3r.png" />
@@ -64,11 +64,11 @@
 								<span>q4</span>
 							</div>
 							<div class="right">
-								<p>1、List 100+ games;</p>
-								<p>2、Open the creation of personal digital avatar of users in LuckyMeta XR metaverse to realize the display and interaction of NFT characters in 3D space;</p>
-								<p>3、Complete the construction of mainstream game types in the LuckyMeta XR metaverse;</p>
-								<p>4、Realize the adaptation of LuckyMeta metaverse in XR hardware devices (VR or MR glasses);</p>
-								<p>5、Complete the self-built Layer2 network to achieve a better gaming experience.</p>
+								<p>{{$t('mapfour1')}}</p>
+								<p>{{$t('mapfour2')}}</p>
+								<p>{{$t('mapfour3')}}</p>
+								<p>{{$t('mapfour4')}}</p>
+								<p>{{$t('mapfour5')}}</p>
 							</div>
 						</div>
 						<img class="pc" src="../../static/images/4r.png" />
@@ -80,11 +80,11 @@
 								<p>20<br>23</p>
 							</div>
 							<div class="right">
-								<p>1、Realize the development of all game types in the original metaverse of LuckyMeta XR;</p>
-								<p>2、Open social scenes in LuckyMeta XR metaverse, where users can interact with other characters;</p>
-								<p>3、Open the game content interface of LuckyMeta XR metaverse for external content providers;</p>
-								<p>4、Complete the configuration and support for mainstream native XR hardware devices;</p>
-								<p>5、Jointly build the original metaverse of LuckyMeta XR with more partners.</p>
+								<p>{{$t('mapfive1')}}</p>
+								<p>{{$t('mapfive2')}}</p>
+								<p>{{$t('mapfive3')}}</p>
+								<p>{{$t('mapfive4')}}</p>
+								<p>{{$t('mapfive5')}}</p>
 							</div>
 						</div>
 					</li>
