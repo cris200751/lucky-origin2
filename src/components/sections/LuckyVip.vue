@@ -3,7 +3,9 @@
     <div class="section-container">
       <h1 class="title">LuckyMeta {{$t('vip')}} (LMV)</h1>
       <p class="description">
-        {{ $t("vipcontent") }}
+        {{ $t("vipcontent1") }}<br/>
+        {{ $t("vipcontent2") }}<br/>
+        {{ $t("vipcontent3") }}
       </p>
       <div class="vips-list">
         <div class="vips-item">

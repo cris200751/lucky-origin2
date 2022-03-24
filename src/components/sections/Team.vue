@@ -3,25 +3,50 @@
     <div class="section-container">
       <h1 class="title">{{ $t("TeamIntroduction") }}</h1>
       <p class="description">
-        {{ $t("team") }}
+        {{ $t("team1") }}<br/>
+        {{ $t("team2") }}<br/>
+        {{ $t("team3") }}<br/>
+        {{ $t("team4") }}<br/>
+        {{ $t("team5") }}
       </p>
       <div class="team-list">
         <div class="team-item">
           <img class="left" src="@/assets/images/team_icon_1.png" alt="" />
           <div class="right">
-            {{ $t("DheerajShukla") }}
+            {{ $t("DheerajShukla1") }}<br/>
+            {{ $t("DheerajShukla2") }}<br/>
+            {{ $t("DheerajShukla3") }}<br/>
+            {{ $t("DheerajShukla4") }}<br/>
+            {{ $t("DheerajShukla5") }}<br/>
+            {{ $t("DheerajShukla6") }}
           </div>
         </div>
         <div class="team-item">
           <img class="left" src="@/assets/images/team_icon_2.png" alt="" />
           <div class="right">
-            {{ $t("NeonFitzgerald") }}
+            {{ $t("NeonFitzgerald1") }}<br/>
+            {{ $t("NeonFitzgerald2") }}<br/>
+            {{ $t("NeonFitzgerald3") }}<br/>
+            {{ $t("NeonFitzgerald4") }}<br/>
+            {{ $t("NeonFitzgerald5") }}<br/>
+            {{ $t("NeonFitzgerald6") }}<br/>
+            {{ $t("NeonFitzgerald7") }}<br/>
+            {{ $t("NeonFitzgerald8") }}<br/>
+            {{ $t("NeonFitzgerald9") }}
           </div>
         </div>
         <div class="team-item">
           <img class="left" src="@/assets/images/team_icon_3.png" alt="" />
           <div class="right">
-            {{ $t("ClaudiaLEE") }}
+            {{ $t("ClaudiaLEE1") }}<br/>
+            {{ $t("ClaudiaLEE2") }}<br/>
+            {{ $t("ClaudiaLEE3") }}<br/>
+            {{ $t("ClaudiaLEE4") }}<br/>
+            {{ $t("ClaudiaLEE5") }}<br/>
+            {{ $t("ClaudiaLEE6") }}<br/>
+            {{ $t("ClaudiaLEE7") }}<br/>
+            {{ $t("ClaudiaLEE8") }}<br/>
+            {{ $t("ClaudiaLEE9") }}
           </div>
         </div>
       </div>

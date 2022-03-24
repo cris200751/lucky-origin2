@@ -117,7 +117,9 @@
     "ParticipatesLM": "Participates in LM’s",
     "Organization": "Dao Organization",
     "vip": "VIP",
-    "vipcontent": "Users pledge 100 LMT to mint 1 LuckyMeta VIP (LMV). LMV is a membership certificate of LM and it is also the value capture tool of the platform. Holding LMV can enjoy the following benefits:",
+    "vipcontent1": "Users pledge 100 LMT to mint 1 LuckyMeta VIP (LMV).",
+    "vipcontent2": "LMV is a membership certificate of LM and it is also the value capture tool",
+    "vipcontent3": "of the platform. Holding LMV can enjoy the following benefits:",
     "MembershipBenefits": "Membership Benefits",
     "MintRedeem": "Mint and Redeem",
     "InvitationRebates": "Invitation Rebates",
@@ -130,10 +132,40 @@
     "Marketing": "Marketing, Las Vegas",
     "company4": "LuckyMeta will continue to explore the journey of compliance and governance of DAO.",
     "TeamIntroduction": "Team introduction",
-    "team": "Our core founding team members were from big names in the industry like: ZYGNA, UBISOFT, PlayTika, AG … And the core members in the operational are all more than 10 years of solid experience in the industry. We’re not just game lovers but punk in the crypto world too! We aim to build a fun and easy, open and fair iGaming platform in Metaverse",
-    "DheerajShukla": "Dheeraj Shukla (India) Co-founder cum CTO Former Boombox and Ubisoft, more than 10 years in Esports Development. Graduated from Université de Montréal 10+ years professional gamer, winning multiple championships titles",
-    "NeonFitzgerald": "Neon Fitzgerald (U.S.A.) Co-founder cum COO Former Jelly Button and Playtika, in the past 12 years in the mobile gaming industry, Neon has worked on multiple aspects of the business including; marketing, monetization, game economy, UI/UX, and product development. His strengths are in monetization and game economy.MBA from MIT Sloan School of Management",
-    "ClaudiaLEE": "Claudia LEE (Singapore) Co-founder cum CMO Former Jelly Button and Playtika, experienced lead of product management with a demonstrated history of working in the computer games industry. Skilled in Mobile Applications, Management, Competitive Intelligence, Online Gaming, and social media. Graduated from Reichman University. 8 years in International Business Development."
+    "team1": "Our core founding team members were from big names in the industry",
+    "team2": "like: ZYGNA, UBISOFT, PlayTika, AG … And the core members in the ",
+    "team3": "operational are all more than 10 years of solid experience in the industry. ",
+    "team4": "We’re not just game lovers but punk in the crypto world too! We aim to ",
+    "team5": "build a fun and easy, open and fair iGaming platform in Metaverse",
+
+    "DheerajShukla1": "Dheeraj Shukla (India) Co-founder cum CTO",
+    "DheerajShukla2": "Former Boombox and Ubisoft,",
+    "DheerajShukla3": "more than 10 years in Esports Development.",
+    "DheerajShukla4": "Graduated from Université de Montréal",
+    "DheerajShukla5": "10+ years professional gamer, winning multiple ",
+    "DheerajShukla6": "championships titles",
+
+    "NeonFitzgerald1": "Neon Fitzgerald (U.S.A.) Co-founder cum COO",
+    "NeonFitzgerald2": "Former Jelly Button and Playtika, in the past 12 ",
+    "NeonFitzgerald3": "years in the",
+    "NeonFitzgerald4": "mobile gaming industry, Neon has worked on",
+    "NeonFitzgerald5": "multiple aspects of the business including;",
+    "NeonFitzgerald6": "marketing, monetization, game economy, UI/UX,",
+    "NeonFitzgerald7": "and product development. His strengths are in ",
+    "NeonFitzgerald8": "monetization and game economy.",
+    "NeonFitzgerald9": "MBA from MIT Sloan School of Management",
+
+
+    "ClaudiaLEE1": "Claudia LEE (Singapore) Co-founder cum CMO ",
+    "ClaudiaLEE2": "Former Jelly Button and Playtika, experienced lead",
+    "ClaudiaLEE3": "of product management with a demonstrated ",
+    "ClaudiaLEE4": "history of working in the computer games industry. ",
+    "ClaudiaLEE5": "Skilled in Mobile Applications, Management, ",
+    "ClaudiaLEE6": "Competitive Intelligence, Online Gaming, and ",
+    "ClaudiaLEE7": "social media. Graduated from Reichman",
+    "ClaudiaLEE8": "University.",
+    "ClaudiaLEE9": "8 years in International Business Development."
+    
 
 
 }
