@@ -1,7 +1,7 @@
 <template>
   <section id="tokenomics">
     <div class="section-container">
-      <h1 class="title">Tokenomics</h1>
+      <h1 class="title">{{$t('Tokenomics')}}</h1>
       <img class="tokenomics-img" src="@/assets/images/tokenomics.png" />
     </div>
   </section>

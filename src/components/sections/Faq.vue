@@ -1,27 +1,24 @@
 <template>
   <section id="faq">
     <div class="section-container">
-      <h1 class="title">FAQ</h1>
+      <h1 class="title">{{ $t("FAQ") }}</h1>
       <div class="content">
         <div
           v-for="(cat, catIndex) in listCat"
           :key="catIndex"
           class="faq-category"
         >
-          <p class="faq-category-title">{{ cat.catName }}</p>
+          <p class="faq-category-title">{{ $t(cat.catName) }}</p>
           <ul class="list-faq">
             <li
               v-for="(faq, faqIndex) in cat.listFaq"
               :key="faqIndex"
               class="faq-item"
             >
-              <a class="faq-question" @click.prevent="faq.active = !faq.active">
-                {{ faq.question }}
-              </a>
-              <!-- <p class="faq-question" @click="faq.active = !faq.active">
-                {{ faq.question }}
-              </p> -->
-              <p class="faq-answer" v-if="faq.active">{{ faq.answer }}</p>
+              <p class="faq-question" @click="faq.active = !faq.active">
+                {{ $t(faq.question) }}
+              </p>
+              <p class="faq-answer" v-if="faq.active">{{ $t(faq.answer) }}</p>
             </li>
           </ul>
         </div>
@@ -39,24 +36,18 @@ export default {
           listFaq: [
             {
               active: false,
-              question:
-                "1. How do I start mining? Do I need to stake my NFT on the LM platform? Or deposit into my wallet which is linked to LM?",
-              answer:
-                "In LM, you can get rewards for holding NFT without staking LM to any platform. Your NFT will be stored in your wallet. After receiving your NFT rewards, you'll  need to connect the contract, sign and pay the gas fee.",
+              question: "Mining1",
+              answer: "Mining1_answer",
             },
             {
               active: false,
-              question:
-                "2. What is the price of the NFT? Will the price be marked on the website? Or can I only check the price on OpenSea? Is there any link?",
-              answer:
-                "Different NFT will have different prices. LM's NFT are all priced in ETH. You can check the price on OpenSea, and also in the market of LM DAPP.",
+              question: "Mining2",
+              answer: "Mining2_answer",
             },
             {
               active: false,
-              question:
-                "3. What is the hash rate of each NFT? Where can I check it?",
-              answer:
-                "Different NFT compute different hash rate. The higher level of the NFT, the higher hash rate will be computed. You can check the details of the specific NFT in the Bag of the LM Dapp. The information includes level, rarity, and hash rate.",
+              question: "Mining3",
+              answer: "Mining3_answer",
             },
           ],
         },
@@ -65,22 +56,18 @@ export default {
           listFaq: [
             {
               active: false,
-              question: "1. Which platform will the LMT be released?",
-              answer:
-                "The LMT has not been released on platfrom yet. While LM officially online, we'll add the LMT into Uniswap and Quicksap. In order to create liquidity and price determination.",
+              question: "Token1",
+              answer: "Token1_answer",
             },
             {
               active: false,
-              question: "2. Where can I buy or trade the LMT?",
-              answer:
-                "You can use the convert function, which is in the LM DAPP, to trade USDT or ETH in LMT. LMT can also be purchased on other DEX or CEX.",
+              question: "Token2",
+              answer: "Token2_answer",
             },
             {
               active: false,
-              question:
-                "3. What is the current price? What will the price be while it's on the exchange?",
-              answer:
-                "The current price is 1 LMT = 1 USDT. The price on the exchange is not final yet.",
+              question: "Token3",
+              answer: "Token3_answer",
             },
           ],
         },
@@ -89,23 +76,18 @@ export default {
           listFaq: [
             {
               active: false,
-              question: "1. When will it be a metaverse?",
-              answer:
-                "The current mobile version is already a metaverse. The PC version is currently being tested and will be released within a month.",
+              question: "Metaverse1",
+              answer: "Metaverse1_answer",
             },
             {
               active: false,
-              question:
-                "2. What will the LM metaverse looks like? Is there any reference?",
-              answer:
-                "Please ask our official admins to get the test address of LM. Currently, we are actively building the LM community and DAO, and everyone is welcome to participate.",
+              question: "Metaverse2",
+              answer: "Metaverse2_answer",
             },
             {
               active: false,
-              question:
-                "3. What are the characters look like? Are there any design drawings for reference?",
-              answer:
-                "LM has 10 rare NFT charaters and 20 ordinary NFT characters. Please ask our official admins for detailed designs.",
+              question: "Metaverse3",
+              answer: "Metaverse3_answer",
             },
           ],
         },
@@ -114,28 +96,23 @@ export default {
           listFaq: [
             {
               active: false,
-              question:
-                "1. Besides slot machines, what other gaming games are there?",
-              answer:
-                "We will launch Baccarat and Sic Bo within a month. And will launch Sportsbook and Poker games within two months.",
+              question: "Game1",
+              answer: "Game1_answer",
             },
             {
               active: false,
-              question:
-                "2. Is the game already a metaverse? Or is it just an online casino for now?",
-              answer:
-                "LM already has various functions of the usual metaverse, and is a decentralized, entertainment-oriented free online casino.",
+              question: "Game2",
+              answer: "Game2_answer",
             },
             {
               active: false,
-              question: "3. Which games are P2E version?",
-              answer:
-                "All of the games on LM are P2E version and can get P2E rewards.",
+              question: "Game3",
+              answer: "Game3_answer",
             },
             {
               active: false,
-              question: "4. Will LuckyMeta be built in the Sandbox metaverse?",
-              answer: "Currently we don't have plans to do this.",
+              question: "Game4",
+              answer: "Game4_answer",
             },
           ],
         },
@@ -144,39 +121,33 @@ export default {
           listFaq: [
             {
               active: false,
-              question: "1. What is the minimum bet to have dividends?",
-              answer:
-                "The minimum bet for the game in LM is 50 LMG. Dividends are based on your effective stake as a percentage of your total stake. For specific rules, please refer to the LM white paper.",
+              question: "Pledge1",
+              answer: "Pledge1_answer",
             },
             {
               active: false,
-              question: "2. How much dividends can I have as a VIP member?",
-              answer:
-                "The higher level of the VIP member, the more divedends you can have. Please check the LM white paper for details.",
+              question: "Pledge2",
+              answer: "Pledge2_answer",
             },
             {
               active: false,
-              question:
-                "3. Where can I find the details of dividends and rewards? On the website or the gaming platform?",
-              answer:
-                "You can find the specific reward rules on the WIKI of LM official website : WWW.LUKYMETA.IO .  And of course you can also find its calculation formula in the white paper.",
+              question: "Pledge3",
+              answer: "Pledge3_answer",
             },
           ],
         },
         {
-          catName: "Development and Partners",
+          catName: "DevelopmentPartners",
           listFaq: [
             {
               active: false,
-              question:
-                "1. Is LuckyMeta game be developed by any well-known developer?",
-              answer:
-                "LM is developed by the engineers who managed casino game which is placed in the top 10 of the APP Store. Both of the main engineer and the main planner have nearly 15 years of experience in the gaming industry. And of course they are also Cypherpunk.",
+              question: "DevelopmentPartners1",
+              answer: "DevelopmentPartners1_answer",
             },
             {
               active: false,
-              question: "2. What partners does LuckyMeta have?",
-              answer: "Please check LM's website to know our partners.",
+              question: "DevelopmentPartners2",
+              answer: "DevelopmentPartners2_answer",
             },
           ],
         },
@@ -187,10 +158,11 @@ export default {
 </script>
 <style scoped>
 .title {
-  padding: 47.5px 0 29.5px;
+  padding: 30px 0 20px;
   color: #ffffff;
   text-align: center;
-  font-size: 19.57px;
+  font-size: 42px;
+  font-weight: 700;
   font-family: Magistral-Bold;
 }
 

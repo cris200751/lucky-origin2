@@ -3,9 +3,7 @@
     <div class="section-container">
       <h1 class="title">NFTs</h1>
       <p class="description">
-        LuckyMeta will launch multiple common NFTs and rare NFTs at the same
-        time. Users can upgrade common NFTs by consuming LMG, and upgrade rare
-        NFTs by consuming LMT. The upgraded NFT will get more rewards.
+       {{$t('NFTsIntroduce')}}
       </p>
       <ul class="list-nft" style="width: 65%">
         <li class="nft-item">

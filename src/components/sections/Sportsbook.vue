@@ -1,13 +1,10 @@
 <template>
   <section id="sports-book">
     <div class="section-container">
-      <h1 class="title">Sportsbook</h1>
+      <h1 class="title">{{$t('Sportsbook')}}</h1>
+      <!-- <img class="img" src="@/assets/images/home_sports1.png" alt=""> -->
       <p class="description">
-        LM cooperates with major blockchain oracle service providers such as
-        LINK to launch the world's largest decentralized Sports Betting game
-        project. It covers full range of the international events and sports
-        that you may think of, including football, NFL and even esports. It also
-        covers virtual sports such as virtual horse racing and soccer.
+        {{$t('SportsbookContent')}}
       </p>
     </div>
   </section>
@@ -34,10 +31,19 @@ export default {};
   padding: 0 121px;
 }
 
+#sports-book .section-container {
+  position: relative;
+}
+
+#sports-book .section-container .img {
+  width: 100px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 @media only screen and (max-width: 1080px) {
-  .title {
-    margin-bottom: 4.24rem;
-  }
   .description {
     padding: 0 0.7rem;
   }

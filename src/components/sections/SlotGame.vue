@@ -1,15 +1,10 @@
 <template>
   <section id="slot-game">
     <div class="section-container">
-      <h1 class="title">Slots Game</h1>
+      <h1 class="title">{{$t("SlotsGame")}}</h1>
       <img class="slot-game-img" src="@/assets/images/slot-game.png" />
       <p class="description">
-        Slots is the first game introduced by LM. Through its open platform, LM
-        also accepts various applications from the mainstream slot machine
-        providers such as Platipus and NETENT to join the open product system of
-        LM. In fact, LM supports a set of specifications which enables other
-        product service providers to use the smart contracts like the building
-        blocks and builds the metaverse world together.
+        {{$t("SlotsAlt")}}
       </p>
     </div>
   </section>

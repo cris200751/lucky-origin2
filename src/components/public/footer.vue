@@ -52,7 +52,7 @@
     <div class="bottom">
       <div class="left">
         <img src="../../../static/images/Logofooter.png" />
-        <p>Copyright © luckymeta 2022</p>
+        <p>{{$t('COPYRIGHT')}} © luckymeta 2022</p>
       </div>
       <div class="center">
         <h1>&nbsp;</h1>
@@ -62,11 +62,11 @@
             ><a
               href="../../../static/images/LuckyMeta.pdf"
               download="LuckyMeta WhitePaper"
-              >White Paper</a
+              >{{$t('wiki')}}</a
             ></span
           >
-          <span>terms to use</span>
-          <span>privacy policy</span>
+          <span>{{$t('TERMSTOUSE')}}</span>
+          <span>{{$t('PRIVACYPOLICY')}}</span>
         </div>
       </div>
       <div class="right">
@@ -125,7 +125,7 @@
             <img class="color" src="@/assets/images/telegram.png" />
           </li>
         </ul>
-        <p>All Rights Reserved</p>
+        <p>{{$t('RIGHTSRESERVED')}}</p>
       </div>
     </div>
   </div>

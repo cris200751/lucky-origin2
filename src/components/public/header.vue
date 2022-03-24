@@ -1,26 +1,33 @@
 <template>
   <div class="header">
-    <router-link class="launch-app" to="/games">LAUNCH APP</router-link>
+    <router-link class="launch-app" to="/games">{{ $t("launch") }}</router-link>
+    <div class="changeTranslate" @mouseenter="enter" @mouseleave="leave">
+      <div><img src="../../../static/images/subway_world-1.png" /></div>
+      <div class="change" v-show="translateShow">
+        <ul>
+          <li v-for="(item,index) in language" @click="translate(item.type,index)" :class="[active == index ? 'active' : '']" :key="index">{{item.name}}</li>
+        </ul>
+      </div>
+    </div>
     <div class="frame">
       <router-link to="/"
         ><img class="logo" src="../../../static/images/Logp.png"
       /></router-link>
       <ul>
         <li :class="$route.path == '/' ? 'active' : ''">
-          <router-link to="/">LuckyMeta</router-link>
+          <router-link to="/">Lucky Meta</router-link>
         </li>
         <li :class="$route.path == '/roadmap' ? 'active' : ''">
-          <router-link to="/roadmap">Roadmap</router-link>
+          <router-link to="/roadmap">{{ $t("Roadmap") }}</router-link>
         </li>
         <!-- <li :class="$route.path == '/games' ? 'active' : ''">
           <router-link to="/games">Games</router-link>
         </li> -->
         <li>
-          <a href="https://luckymeta.gitbook.io/lucky-meta-white-paper/"
-            >Wiki</a
-          >
+          <a href="https://luckymeta.gitbook.io/lucky-meta-white-paper/">{{
+            $t("luckyWiki")
+          }}</a>
         </li>
-        <li class="launch-app-menu"><router-link to="/games">LAUNCH APP</router-link></li>
       </ul>
     </div>
   </div>
@@ -29,12 +36,51 @@
 <script>
 export default {
   data() {
-    return {};
+    return {
+      translateShow: false,
+      language: [
+        {
+          name: "English",
+          type: "en",
+        },
+        {
+          name: "繁體中文",
+          type: "tw",
+        },
+      ],
+      active: "",
+    };
+  },
+  created() {
+    let lang = localStorage.getItem("language");
+    if (lang) {
+      for (var i in this.language) {
+        if (this.language[i].type == lang) {
+          this.active = i;
+        }
+      }
+    } else {
+      this.active = 0;
+    }
+    this.$i18n.locale = lang || "en";
   },
   mounted() {},
   methods: {
     jumpclick(url) {
       window.open(url, "_blank");
+    },
+    translate(type,index) {
+      this.active = index;
+      this.translateShow = false
+
+      localStorage.setItem("language", type);
+      this.$i18n.locale = type;
+    },
+    enter() {
+      this.translateShow = true;
+    },
+    leave() {
+      this.translateShow = false;
     },
   },
 };
@@ -46,6 +92,8 @@ export default {
   background-repeat: no-repeat;
   background-size: 100% 100%;
   position: relative;
+  padding: 10px;
+  z-index: 500;
 }
 
 /* .list-social-network {
@@ -100,10 +148,6 @@ img.color {
   bottom: 35%;
 }
 
-.header .frame ul li.launch-app-menu {
-  display: none;
-}
-
 .header .frame {
   display: flex;
   padding-top: 78.5px;
@@ -137,10 +181,6 @@ img.color {
   font-size: 16.58px;
   text-transform: uppercase;
   color: #ffffff;
-}
-
-.header .frame ul li.launch-app-menu a{ 
-  color: #00ff22;
 }
 
 .header .frame ul .active a {
@@ -203,7 +243,7 @@ img.color {
   display: block;
 }
 
-@media only screen and (max-width: 1080px) {
+@media only screen and (max-width: 767px) {
   .header {
     background: #110020;
     border-bottom: 2px solid #d800ff;
@@ -246,12 +286,38 @@ img.color {
     margin-left: 0.1rem;
     font-size: 0.14rem;
   }
-  .header .launch-app {
-    display: none;
-  }
+}
 
-  .header .frame ul li.launch-app-menu {
-    display: block;
-  }
+.header .changeTranslate {
+  position: absolute;
+  font-family: Magistral-Medium;
+  font-size: 16.58px;
+  text-transform: uppercase;
+  color: #00ff22;
+  right: 2%;
+  bottom: 5%;
+}
+.header .changeTranslate img {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+
+.header .change {
+  position: absolute;
+  background: gray;
+  line-height: 2;
+  width: 120px;
+  right: calc(100% - 30px);
+  text-align: center;
+}
+.header .change li {
+  font-size: 18px;
+  cursor: pointer;
+  text-transform: initial;
+  color: #fff;
+}
+.header .change li.active {
+  color: #c882ff;
 }
 </style>

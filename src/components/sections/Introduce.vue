@@ -1,7 +1,7 @@
 <template>
   <section id="introduce">
     <div class="section-container">
-      <h1 class="title">Introducing Lucky Meta</h1>
+      <h1 class="title">{{$t('Introducing')}} Lucky Meta</h1>
       <div class="video-mask">
         <a ref="video-link" href="#" @click.prevent="handleVideo">
           <div class="video-mask-inner-wrapper">
@@ -14,7 +14,7 @@
         </a>
       </div>
       <video ref="video" class="video" controls>
-        <source src="@/assets/videos/Keynote.mp4" type="video/mp4" />
+        <!-- <source src="@/assets/videos/Keynote.mp4" type="video/mp4" /> -->
         Your browser does not support the video tag.
       </video>
       <!-- <iframe
@@ -29,9 +29,10 @@
         allowfullscreen
       ></iframe> -->
       <p class="description">
-        LUCKY METAS ARE FIERCE CREATURES THAT LOVE TO BATTLE, BUILD, AND HUNT
+        <!-- LUCKY METAS ARE FIERCE CREATURES THAT LOVE TO BATTLE, BUILD, AND HUNT
         FOR TREASURE! BUILD UP A COLLECTION AND USE THEM ACROSS AN EVER
-        EXPANDING UNIVERSE OF GAMES!
+        EXPANDING UNIVERSE OF GAMES! -->
+        {{$t('info1') + $t('info2')}}
       </p>
     </div>
     <!-- <div class="pink-frame"></div>
@@ -69,6 +70,7 @@ section {
 .description {
   padding: 0 144px;
   margin-top: 30px;
+  text-transform: uppercase;
 }
 
 @media only screen and (max-width: 1080px) {

@@ -1,11 +1,9 @@
 <template>
   <section>
     <div class="section-container">
-      <h1 class="title">Lucky Meta Basic</h1>
+      <h1 class="title">Lucky Meta {{$t('Basic')}}</h1>
       <p class="description">
-        LuckyMeta is a metaverse of NFTs, liquidity mining, PLAY to Earn with
-        multiple mechanisms, there are more surprises waiting for you to
-        discover
+        {{$t('BasicTitle')}}
       </p>
       <div class="list-item-meta-container">
         <el-row :gutter="20">
@@ -15,12 +13,7 @@
               <div class="meta-item-img-con">
                 <img class="meta-item-img" src="@/assets/images/nfts.png" />
               </div>
-              <p class="meta-item-description">
-                LuckyMeta will launch multiple common NFTs and rare NFTs at the
-                same time. Users can upgrade common NFTs by consuming LMG, and
-                upgrade rare NFTs by consuming LMT. The upgraded NFT will get
-                more rewards.
-              </p>
+              <p class="meta-item-description">{{$t('Basic1')}}</p>
             </div>
           </el-col>
           <el-col :span="6">
@@ -29,11 +22,7 @@
               <div class="meta-item-img-con">
                 <img class="meta-item-img" src="@/assets/images/defi.png" />
               </div>
-              <p class="meta-item-description">
-                The full name of DeFi is Decentralized Finance, which is
-                "decentralized finance", and users can get more LMG/LMT by
-                adding liquidity.
-              </p>
+              <p class="meta-item-description">{{$t('Basic2')}}</p>
             </div>
           </el-col>
           <el-col :span="6">
@@ -42,12 +31,7 @@
               <div class="meta-item-img-con">
                 <img class="meta-item-img" src="@/assets/images/p2e.png" />
               </div>
-              <p class="meta-item-description">
-                The igaming metaverse is first and foremost a gaming metaverse
-                and the core of the entire metaverse economy is the Play to
-                Earn. We earn while we play. LM achieves the Play to Earn from
-                the following aspects:
-              </p>
+              <p class="meta-item-description">{{$t('Basic3')}}</p>
             </div>
           </el-col>
           <el-col :span="6">
@@ -56,12 +40,7 @@
               <div class="meta-item-img-con">
                 <img class="meta-item-img" src="@/assets/images/dao.png" />
               </div>
-              <p class="meta-item-description">
-                All the major affairs of LM are decided by the Decentralized
-                Autonomous Community Organization (DAO) by LMT voting. The
-                community plays a major role in leading towards success since
-                its establishment.
-              </p>
+              <p class="meta-item-description">{{$t('Basic4')}}</p>
             </div>
           </el-col>
         </el-row>
@@ -82,7 +61,8 @@ export default {};
 }
 
 .title {
-  margin-bottom: 60px;
+  margin-bottom: 30px;
+  padding-bottom: 30px;
 }
 
 .description {
@@ -158,28 +138,10 @@ export default {};
 }
 
 @media only screen and (max-width: 1080px) {
-  .section-container {
-    padding-bottom: 0.9rem
-  }
-
-  .title {
-    margin-bottom: 0.6rem;
-  }
-
-  .description {
-    margin-bottom: 0.5rem;
-  }
-
-  .meta-item {
-    padding: 0.3rem 0.15rem;
-  }
-
   .meta-item::before {
     padding: 0.05rem;
-    border-radius: 0.2rem;
   }
   .meta-item-number {
-    font-size: 0.2rem;
     margin-bottom: 0.05rem;
   }
   .meta-item-img-con {

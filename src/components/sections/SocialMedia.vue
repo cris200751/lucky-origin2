@@ -1,7 +1,7 @@
 <template>
   <section id="social-media">
     <div class="section-container">
-      <h1 class="title">Social Media</h1>
+      <h1 class="title">{{$t('SocialMedia')}}</h1>
       <ul class="list-social-network">
         <li
           @click="jumpclick('https://twitter.com/LuckyMetaverse')"
@@ -97,15 +97,5 @@ export default {
 .social-network img {
   width: 80%;
   height: auto;
-}
-
-@media only screen and (max-width: 1080px) {
-  .title {
-    font-size: 0.4rem
-  }
-  .section-container {
-    padding-top: 1.55rem;
-    padding-bottom: 1.45rem;
-  }
 }
 </style>
