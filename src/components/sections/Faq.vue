@@ -185,6 +185,7 @@ export default {
   font-family: Magistral-Book;
   font-size: 14px;
   margin-bottom: 7px;
+  text-transform: capitalize;
 }
 
 .faq-item .faq-answer {
@@ -192,5 +193,6 @@ export default {
   font-size: 14px;
   margin-bottom: 7px;
   color: #c882ff;
+  text-transform: capitalize;
 }
 </style>

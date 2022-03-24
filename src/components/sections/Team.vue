@@ -76,7 +76,6 @@ export default {};
   color: #fff;
   height: 100%;
   display: flex;
-  align-items: end;
 }
 
 @media only screen and (max-width: 1080px) {
