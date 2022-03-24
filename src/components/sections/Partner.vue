@@ -89,4 +89,5 @@ export default {};
   font-size: 22px;
   margin-top: 8px;
 }
+
 </style>
