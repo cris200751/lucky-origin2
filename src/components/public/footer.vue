@@ -58,13 +58,16 @@
         <h1>&nbsp;</h1>
         <p>&nbsp; <br />&nbsp; <br />&nbsp;</p>
         <div>
-          <span
+          <!-- <span
             ><a
               href="../../../static/images/LuckyMeta.pdf"
               download="LuckyMeta WhitePaper"
               >{{$t('wiki')}}</a
             ></span
-          >
+          > -->
+          <span>
+            <a href="https://luckymeta.gitbook.io/lucky-meta-white-paper/">{{$t('wiki')}}</a>
+          </span>
           <span>{{$t('TERMSTOUSE')}}</span>
           <span>{{$t('PRIVACYPOLICY')}}</span>
         </div>
@@ -72,7 +75,7 @@
       <div class="right">
         <ul>
           <li
-            @click="jumpclick('https://twitter.com/LuckyMetaverse')"
+            @click="jumpclick(' https://twitter.com/Lucky_Metaverse')"
             class="social-network"
           >
             <img class="no-color" src="@/assets/images/twitter-no-color.png" />
@@ -80,7 +83,7 @@
           </li>
           <li
             @click="
-              jumpclick('https://www.facebook.com/LuckyMeta-102656795685121')
+              jumpclick('https://www.facebook.com/LuckyMetaverse')
             "
             class="social-network"
           >
@@ -88,7 +91,7 @@
             <img class="color" src="@/assets/images/facebook.png" />
           </li>
           <li
-            @click="jumpclick('https://www.instagram.com/luckymeta_office/')"
+            @click="jumpclick('https://www.instagram.com/luckymeta_official')"
             class="social-network"
           >
             <img

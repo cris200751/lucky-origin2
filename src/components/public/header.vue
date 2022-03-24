@@ -25,7 +25,7 @@
         </li> -->
         <li>
           <a href="https://luckymeta.gitbook.io/lucky-meta-white-paper/">{{
-            $t("luckyWiki")
+            $t("wiki")
           }}</a>
         </li>
       </ul>

@@ -4,10 +4,16 @@
       <h1 class="title">{{$t('SocialMedia')}}</h1>
       <ul class="list-social-network">
         <li
-          @click="jumpclick('https://twitter.com/LuckyMetaverse')"
+          @click="jumpclick('https://twitter.com/Lucky_Metaverse')"
           class="social-network"
         >
           <img class="color" src="@/assets/images/twitter-1.png" />
+        </li>
+        <li
+          @click="jumpclick('https://www.instagram.com/luckymeta_official')"
+          class="social-network"
+        >
+          <img class="color" src="@/assets/images/instagram-1.png" />
         </li>
         <li
           @click="
@@ -16,12 +22,6 @@
           class="social-network"
         >
           <img class="color" src="@/assets/images/facebook-1.png" />
-        </li>
-        <li
-          @click="jumpclick('https://www.instagram.com/luckymeta_office/')"
-          class="social-network"
-        >
-          <img class="color" src="@/assets/images/instagram-1.png" />
         </li>
         <li
           @click="jumpclick('https://discord.gg/UqH7GwwV89')"
@@ -60,7 +60,7 @@ export default {
 </script>
 <style scoped>
 .section-container {
-  padding-top: 255px;
+  padding-top: 200px;
   padding-bottom: 245px;
   background: url("../../assets/images/social-media-background.png");
   background-size: cover;
@@ -69,7 +69,7 @@ export default {
 }
 
 .title {
-  margin-bottom: 20px;
+  margin-bottom: 65px;
   font-size: 40px;
 }
 
@@ -86,16 +86,21 @@ export default {
 
 .list-social-network {
   display: flex;
-  width: 52%;
+  width: 66%;
   margin: auto;
 }
 
 .social-network {
   text-align: center;
+  margin-right: 28px;
+}
+
+.social-network:last-child {
+  margin-right: 0;
 }
 
 .social-network img {
-  width: 80%;
+  width: 100%;
   height: auto;
 }
 </style>

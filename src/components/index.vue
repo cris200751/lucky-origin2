@@ -98,13 +98,13 @@
     <slot-game />
     <live-entertaiment />
     <sportsbook />
-    <social-media />
     <lucky-gold />
     <lucky-token />
     <lucky-vips />
     <tokenomics />
     <company />
     <team />
+    <social-media />
     <partner />
     <faq />
     <Publicfooter></Publicfooter>
