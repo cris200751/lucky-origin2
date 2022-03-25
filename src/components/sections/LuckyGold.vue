@@ -81,4 +81,10 @@ export default {};
   }
 }
 
+@media only screen and (max-width: 440px) { 
+  #gold .gold-list .gold-item .text {
+    font-size: 14px;
+  }
+}
+
 </style>

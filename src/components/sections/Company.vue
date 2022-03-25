@@ -133,4 +133,29 @@ export default {};
   }
 }
 
+@media only screen and (max-width: 767px) { 
+ #company .last-row .last-item .text,
+ #company .first-row .first-item .text,
+ .company-list .desc {
+   font-size: 16px;
+ }
+
+ .section-container {
+   padding-bottom: 60px;
+ }
+
+}
+
+@media only screen and (max-width: 480px) {
+  #company .company-list {
+    width: 90%;
+  }
+
+  #company .last-row .last-item .text,
+  #company .first-row .first-item .text,
+  .company-list .desc {
+    font-size: 12px;
+  }
+}
+
 </style>

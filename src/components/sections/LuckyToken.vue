@@ -121,4 +121,26 @@ export default {};
     padding: 0 0.7rem;
   }
 }
+
+@media only screen and (max-width: 670px) {
+  #token .token-list .token-item {
+    width: calc(100% / 2);
+    margin-right: 0;
+  }
+
+  #token .token-list .token-item .text {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 440px) { 
+  #token .token-list {
+    padding: 0 40px;
+  }
+
+  #token .token-list .token-item .text {
+    font-size: 12px;
+    line-height: normal;
+  }
+}
 </style>

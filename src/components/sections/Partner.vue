@@ -90,4 +90,24 @@ export default {};
   margin-top: 8px;
 }
 
+@media only screen and (max-width: 767px) {
+  .partner-item p {
+    font-size: 18px;
+  }
+
+}
+
+@media only screen and (max-width: 670px) {
+  .partner-item  {
+    width: calc(100% / 2);
+    margin-right: 0;
+  }
+
+  .partner-item p {
+    font-size: 14px;
+  }
+
+
+}
+
 </style>

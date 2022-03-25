@@ -103,4 +103,29 @@ export default {
   width: 100%;
   height: auto;
 }
+
+@media only screen and (max-width: 900px) {
+  .section-container {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+
+}
+
+@media only screen and (max-width: 670px) {
+  .list-social-network {
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+  .social-network  {
+    width: calc(100% / 3);
+    margin-right: 0;
+  }
+
+  .social-network img {
+    width: 70%;
+  }
+
+}
 </style>

@@ -86,11 +86,37 @@ export default {};
   line-height: 33px;
   text-align: center;
   color: #fff;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 @media only screen and (max-width: 1080px) {
   .description {
     padding: 0 0.7rem;
+  }
+}
+
+@media only screen and (max-width: 767px) { 
+ #vips .vips-list .vips-item {
+   width: calc(100% / 3);
+   margin-right: 0;
+ }
+}
+
+@media only screen and (max-width: 670px) {
+  #vips .vips-list .vips-item .text {
+    font-size: 16px;
+  }
+}
+
+
+@media only screen and (max-width: 480px) {
+  #vips .vips-list .vips-item .text {
+    font-size: 12px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
   }
 }
 

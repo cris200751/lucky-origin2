@@ -465,6 +465,18 @@ export default {
   .footer .bottom .right ul {
     margin: 0 auto;
     margin-bottom: 0.1rem;
+    width: 40%
+  }
+  .footer .bottom .right ul li {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media only screen and (max-width: 440px) {
+  .footer .bottom .right ul li {
+    width: 30px;
+    height: 30px;
   }
 }
 </style>

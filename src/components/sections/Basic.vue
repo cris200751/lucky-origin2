@@ -9,7 +9,7 @@
         <el-row :gutter="20">
           <el-col :span="6">
             <div class="meta-item">
-              <p class="meta-item-number">1</p>
+              <p class="meta-item-number"><img src="@/assets/images/basic_icon_1.png" alt=""></p>
               <div class="meta-item-img-con">
                 <img class="meta-item-img" src="@/assets/images/nfts.png" />
               </div>
@@ -18,7 +18,7 @@
           </el-col>
           <el-col :span="6">
             <div class="meta-item">
-              <p class="meta-item-number">2</p>
+              <p class="meta-item-number"><img src="@/assets/images/basic_icon_2.png" alt=""></p>
               <div class="meta-item-img-con">
                 <img class="meta-item-img" src="@/assets/images/defi.png" />
               </div>
@@ -27,7 +27,7 @@
           </el-col>
           <el-col :span="6">
             <div class="meta-item">
-              <p class="meta-item-number">3</p>
+              <p class="meta-item-number"><img src="@/assets/images/basic_icon_3.png" alt=""></p>
               <div class="meta-item-img-con">
                 <img class="meta-item-img" src="@/assets/images/p2e.png" />
               </div>
@@ -36,7 +36,7 @@
           </el-col>
           <el-col :span="6">
             <div class="meta-item">
-              <p class="meta-item-number">4</p>
+              <p class="meta-item-number"><img src="@/assets/images/basic_icon_4.png" alt=""></p>
               <div class="meta-item-img-con">
                 <img class="meta-item-img" src="@/assets/images/dao.png" />
               </div>
@@ -70,12 +70,6 @@ export default {};
   padding: 0 144px;
 }
 
-@media only screen and (max-width: 1080px) {
-  .description {
-    padding: 0 0.7rem;
-  }
-}
-
 .list-item-meta-container {
   width: 90%;
   margin: auto;
@@ -91,7 +85,7 @@ export default {};
   position: relative;
   text-align: center;
   padding: 30px 15px;
-  height: 91%;
+  height: 100%;
 }
 .meta-item::before {
   content: "";
@@ -102,7 +96,10 @@ export default {};
   bottom: 0;
   border-radius: 20px;
   padding: 7px;
-  background: linear-gradient(
+  background: url("../../assets/images/basic_background_border.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  /* background: linear-gradient(
     140.24deg,
     #fe53bb 15.06%,
     rgba(158, 149, 196, 0) 45.93%,
@@ -111,7 +108,7 @@ export default {};
   );
   -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
   -webkit-mask-composite: xor;
-  mask-composite: exclude;
+  mask-composite: exclude; */
 }
 
 .meta-item-number {
@@ -138,6 +135,9 @@ export default {};
 }
 
 @media only screen and (max-width: 1080px) {
+  .description {
+    padding: 0 0.7rem;
+  }
   .meta-item::before {
     padding: 0.05rem;
   }
@@ -151,5 +151,29 @@ export default {};
   .meta-item-description {
     font-size: 0.12rem;
   }
+}
+
+@media only screen and (max-width: 670px) {
+  .el-row {
+    flex-direction: column;
+  }
+  .el-col-6 {
+    width: 72%;
+    margin: 0 auto;
+  }
+
+  .meta-item {
+    margin-bottom: 20px;
+  }
+
+  .meta-item-img {
+    width: 28%;
+    margin: auto;
+  }
+
+  .meta-item-description {
+    margin-top: 20px;
+  }
+
 }
 </style>

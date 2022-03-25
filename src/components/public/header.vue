@@ -13,7 +13,16 @@
       <router-link to="/"
         ><img class="logo" src="../../../static/images/Logp.png"
       /></router-link>
-      <ul>
+      <div class="mobile">
+        <img class="img" @mouseleave="mobileLeave" @click="switchMenus" src="@/assets/images/menus.png" alt="">
+        <div class="mobile-menus" :class="mobile_visible ? 'visible' : '' ">
+          <div class="mobile-item"><router-link to="/">Lucky Meta</router-link></div>
+          <div class="mobile-item"><router-link to="/roadmap">{{ $t("Roadmap") }}</router-link></div>
+          <div class="mobile-item"><a href="https://luckymeta.gitbook.io/lucky-meta-white-paper/">{{$t("wiki")}}</a></div>
+          <div class="mobile-item green"><router-link to="/games">{{ $t("launch") }}</router-link></div>
+        </div>
+      </div>
+      <ul class="nav-list">
         <li :class="$route.path == '/' ? 'active' : ''">
           <router-link to="/">Lucky Meta</router-link>
         </li>
@@ -28,6 +37,11 @@
             $t("wiki")
           }}</a>
         </li>
+        <li class="dapp">
+          <a href="/games">{{
+            $t("launch")
+          }}</a>
+        </li>
       </ul>
     </div>
   </div>
@@ -37,6 +51,7 @@
 export default {
   data() {
     return {
+      mobile_visible: false,
       translateShow: false,
       language: [
         {
@@ -66,6 +81,9 @@ export default {
   },
   mounted() {},
   methods: {
+    switchMenus() {
+      this.mobile_visible = !this.mobile_visible
+    },
     jumpclick(url) {
       window.open(url, "_blank");
     },
@@ -82,6 +100,9 @@ export default {
     leave() {
       this.translateShow = false;
     },
+    mobileLeave() {
+      this.mobile_visible = false
+    }
   },
 };
 </script>
@@ -138,6 +159,7 @@ img.color {
 .social-network:hover .color {
   display: block;
 } */
+
 .header .launch-app {
   position: absolute;
   font-family: Magistral-Medium;
@@ -153,6 +175,50 @@ img.color {
   padding-top: 78.5px;
   width: 65%;
   margin: 0 auto;
+}
+
+.header .frame .mobile {
+  display: none;
+}
+
+.header .frame .mobile-menus {
+  height: auto;
+  max-height: 0;
+	transition: all .5s ease;
+	visibility: hidden;
+  overflow: hidden;
+  position: absolute;
+  top: 50px;
+  left: -26px;
+}
+
+.header .frame .mobile-menus.visible {
+  max-height: 100vh;
+  height: auto;
+  visibility: visible;
+}
+
+.header .frame .mobile-menus .mobile-item {
+  width: 150px;
+  height: 40px;
+  background: rgba(0,0,0,.8);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header .frame .mobile-menus .mobile-item a {
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.header .frame .mobile-menus .mobile-item.green a {
+  color: #00ff22;
+}
+
+.header .frame .dapp {
+  display: none;
 }
 
 .header .frame .logo {
@@ -243,11 +309,49 @@ img.color {
   display: block;
 }
 
+.header .changeTranslate {
+  position: absolute;
+  font-family: Magistral-Medium;
+  font-size: 16.58px;
+  text-transform: uppercase;
+  color: #00ff22;
+  right: 2%;
+  bottom: 5%;
+}
+.header .changeTranslate img {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+
+.header .change {
+  position: absolute;
+  background: rgba(0,0,0,.8);
+  line-height: 2;
+  width: 120px;
+  right: calc(100% - 30px);
+  text-align: center;
+}
+.header .change li {
+  font-size: 18px;
+  cursor: pointer;
+  text-transform: initial;
+  color: #fff;
+}
+.header .change li.active {
+  color: #00ff22;
+}
+
 @media only screen and (max-width: 767px) {
   .header {
     background: #110020;
     border-bottom: 2px solid #d800ff;
   }
+
+  .header .launch-app {
+    display: none;
+  }
+
   .header .frame {
     padding-top: 0.26rem;
     margin: 0 0.3rem;
@@ -255,6 +359,15 @@ img.color {
     padding-bottom: 0.17rem;
     align-items: center;
   }
+
+  .header .frame .dapp {
+    display: block;
+  }
+
+  .header .frame .dapp a {
+    color: #00ff22;
+  }
+
   .header .frame .logo {
     width: 0.62rem;
     margin-bottom: 0;
@@ -286,38 +399,43 @@ img.color {
     margin-left: 0.1rem;
     font-size: 0.14rem;
   }
+
+  .header .changeTranslate {
+    position: absolute;
+    font-family: Magistral-Medium;
+    font-size: 16.58px;
+    text-transform: uppercase;
+    color: #00ff22;
+    right: 2%;
+    bottom: 50%;
+    transform: translateY(50%);
+  }
 }
 
-.header .changeTranslate {
-  position: absolute;
-  font-family: Magistral-Medium;
-  font-size: 16.58px;
-  text-transform: uppercase;
-  color: #00ff22;
-  right: 2%;
-  bottom: 5%;
-}
-.header .changeTranslate img {
-  width: 24px;
-  height: 24px;
-  cursor: pointer;
-}
 
-.header .change {
-  position: absolute;
-  background: gray;
-  line-height: 2;
-  width: 120px;
-  right: calc(100% - 30px);
-  text-align: center;
-}
-.header .change li {
-  font-size: 18px;
-  cursor: pointer;
-  text-transform: initial;
-  color: #fff;
-}
-.header .change li.active {
-  color: #c882ff;
+@media only screen and (max-width: 480px) {
+  .header .frame .nav-list {
+    display: none;
+  }
+
+  .header .frame .logo {
+    display: none;
+  }
+
+  .header .frame .mobile {
+    display: block;
+    position: relative;
+  }
+
+  .header .frame .img {
+    width: 30px;
+  }
+
+  .header .changeTranslate {
+    bottom: 50%;
+    transform: translateY(50%);
+  }
+
+  
 }
 </style>

@@ -107,5 +107,47 @@ export default {};
   .description {
     padding: 0 0.7rem;
   }
+
+  #team .team-list .team-item .right {
+    font-size: 16px;
+    line-height: 24px;
+  }
 }
+
+@media only screen and (max-width: 900px) {
+#team .team-list .team-item .right {
+  font-size: 16px;
+  line-height: 18px;
+}
+
+}
+
+@media only screen and (max-width: 767px) {
+#team .team-list .team-item .right {
+  font-size: 14px;
+  line-height: 18px;
+}
+
+}
+
+@media only screen and (max-width: 670px) {
+#team .team-list .team-item .right {
+  font-size: 14px;
+  line-height: 18px;
+}
+#team .team-list .team-item {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+}
+
+#team .team-list .team-item .left {
+  width: 120px;
+  margin-bottom: 20px;
+  margin-right: 0;
+}
+
+
+}
+
 </style>
