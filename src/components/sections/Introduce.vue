@@ -32,7 +32,8 @@
         <!-- LUCKY METAS ARE FIERCE CREATURES THAT LOVE TO BATTLE, BUILD, AND HUNT
         FOR TREASURE! BUILD UP A COLLECTION AND USE THEM ACROSS AN EVER
         EXPANDING UNIVERSE OF GAMES! -->
-        {{$t('info1') + $t('info2')}}
+        <!-- {{$t('info1') + $t('info2')}} -->
+        {{$t('infoNew')}}
       </p>
     </div>
     <!-- <div class="pink-frame"></div>

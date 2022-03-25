@@ -9,6 +9,9 @@
         {{ $t("team4") }}<br/>
         {{ $t("team5") }}
       </p>
+      <p class="new-description">
+        {{$t('newTeamDesc')}}
+      </p>
       <div class="team-list">
         <div class="team-item">
           <img class="left" src="@/assets/images/team_icon_1.png" alt="" />
@@ -19,6 +22,9 @@
             {{ $t("DheerajShukla4") }}<br/>
             {{ $t("DheerajShukla5") }}<br/>
             {{ $t("DheerajShukla6") }}
+          </div>
+          <div class="new-right">
+             {{ $t("newDheerajShukla") }}
           </div>
         </div>
         <div class="team-item">
@@ -34,6 +40,9 @@
             {{ $t("NeonFitzgerald8") }}<br/>
             {{ $t("NeonFitzgerald9") }}
           </div>
+          <div class="new-right">
+             {{ $t("newNeonFitzgerald") }}
+          </div>
         </div>
         <div class="team-item">
           <img class="left" src="@/assets/images/team_icon_3.png" alt="" />
@@ -47,6 +56,9 @@
             {{ $t("ClaudiaLEE7") }}<br/>
             {{ $t("ClaudiaLEE8") }}<br/>
             {{ $t("ClaudiaLEE9") }}
+          </div>
+          <div class="new-right">
+            {{ $t("newClaudiaLEE") }}
           </div>
         </div>
       </div>
@@ -72,6 +84,16 @@ export default {};
 .description {
   margin-bottom: 40px;
   padding: 0 121px;
+}
+
+.new-description {
+  margin-bottom: 40px;
+  padding: 0 20px;
+  word-break: break-all;
+}
+
+#team .new-description {
+  display: none;
 }
 
 #team .team-list {
@@ -103,19 +125,30 @@ export default {};
   display: flex;
 }
 
+#team .team-list .team-item .new-right {
+  flex: 1;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  color: #fff;
+  height: 100%;
+  display: flex;
+  display: none;
+}
+
 @media only screen and (max-width: 1080px) {
   .description {
     padding: 0 0.7rem;
   }
 
-  #team .team-list .team-item .right {
+  #team .team-list .team-item .new-right {
     font-size: 16px;
     line-height: 24px;
   }
 }
 
 @media only screen and (max-width: 900px) {
-#team .team-list .team-item .right {
+#team .team-list .team-item .new-right {
   font-size: 16px;
   line-height: 18px;
 }
@@ -123,7 +156,7 @@ export default {};
 }
 
 @media only screen and (max-width: 767px) {
-#team .team-list .team-item .right {
+#team .team-list .team-item .new-right {
   font-size: 14px;
   line-height: 18px;
 }
@@ -131,7 +164,7 @@ export default {};
 }
 
 @media only screen and (max-width: 670px) {
-#team .team-list .team-item .right {
+#team .team-list .team-item .new-right {
   font-size: 14px;
   line-height: 18px;
 }
@@ -145,6 +178,22 @@ export default {};
   width: 120px;
   margin-bottom: 20px;
   margin-right: 0;
+}
+
+#team .description {
+  display: none;
+}
+
+#team .new-description {
+  display: block;
+}
+
+#team .team-list .team-item .right {
+  display: none;
+}
+
+#team .team-list .team-item .new-right {
+  display: block;
 }
 
 

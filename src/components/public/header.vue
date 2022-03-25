@@ -1,14 +1,14 @@
 <template>
   <div class="header">
     <router-link class="launch-app" to="/games">{{ $t("launch") }}</router-link>
-    <div class="changeTranslate" @mouseenter="enter" @mouseleave="leave">
+    <!-- <div class="changeTranslate" @mouseenter="enter" @mouseleave="leave">
       <div><img src="../../../static/images/subway_world-1.png" /></div>
       <div class="change" v-show="translateShow">
         <ul>
           <li v-for="(item,index) in language" @click="translate(item.type,index)" :class="[active == index ? 'active' : '']" :key="index">{{item.name}}</li>
         </ul>
       </div>
-    </div>
+    </div> -->
     <div class="frame">
       <router-link to="/"
         ><img class="logo" src="../../../static/images/Logp.png"
