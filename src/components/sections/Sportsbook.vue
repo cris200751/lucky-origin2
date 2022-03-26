@@ -54,7 +54,7 @@ export default {};
     padding-top: 33px;
     padding-bottom: 30px;
     background: url("../../assets/images/sportsbook-background-mobile.png");
-    background-size: cover;
+    background-size: 100% 100%;
     background-position: center;
   }
 }

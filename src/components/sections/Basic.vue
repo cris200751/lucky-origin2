@@ -154,6 +154,14 @@ export default {};
 }
 
 @media only screen and (max-width: 670px) {
+  .section-container {
+    padding-top: 33px;
+    padding-bottom: 95px;
+    background: url("../../assets/images/basic-background.png");
+    background-size: cover;
+    background-position: right;
+  }
+
   .el-row {
     flex-direction: column;
   }
