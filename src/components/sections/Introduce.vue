@@ -14,7 +14,8 @@
         </a>
       </div>
       <video ref="video" class="video" controls>
-        <source src="@/assets/videos/Keynote.mp4" type="video/mp4" />
+        <source src="/static/media/Keynote.27eb45c.mp4" type="video/mp4" />
+        <!-- <source src="https://www.luckymeta.io/static/media/Keynote.27eb45c.mp4" type="video/mp4" /> -->
         Your browser does not support the video tag.
       </video>
       <!-- <iframe

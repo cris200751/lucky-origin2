@@ -57,5 +57,8 @@ export default {};
     background-size: 100% 100%;
     background-position: center;
   }
+  .title {
+    margin-bottom: 200px;
+  }
 }
 </style>

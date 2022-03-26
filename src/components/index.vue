@@ -74,9 +74,24 @@
 					</div>-->
 
           <div class="info trans-up delay-30">
-            <p>{{ $t("info1") }}</p>
+            <!-- <p>{{ $t("info1") }}</p>
             <p>{{ $t("info2") }}</p>
-            <p>{{ $t("info3") }}</p>
+            <p>{{ $t("info3") }}</p> -->
+            <div class="video-mask">
+              <a ref="video-link" href="#" @click.prevent="handleVideo">
+                <div class="video-mask-inner-wrapper">
+                  <img
+                    width="110"
+                    height="110"
+                    src="@/assets/images/Play-button.png"
+                  />
+                </div>
+              </a>
+            </div>
+            <video ref="video" class="videos" controls>
+              <!-- <source src="/static/media/Keynote.27eb45c.mp4" type="video/mp4" /> -->
+              Your browser does not support the video tag.
+            </video>
           </div>
         </div>
         <div class="pingt">
@@ -165,6 +180,11 @@ export default {
   },
   created() {},
   methods: {
+    handleVideo() {
+      // this.$refs["video-link"].style.display = "none";
+      // this.$refs.video.style.display = "block";
+      // this.$refs.video.play();
+    },
     allScroll() {
       var scrollTop =
         window.pageYOffset ||
@@ -398,6 +418,54 @@ export default {
   padding: 80px 0 108px;
   margin: 221px auto 0;
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main .info .video-mask {
+  width: 100%;
+  padding: 0 22px;
+}
+
+.main .info .video-mask-inner-wrapper {
+  background: #51515180 url("../assets/images/man.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  border-radius: 20px;
+  height: 346px;
+  padding: 10px;
+  display: flex;
+  position: relative;
+  z-index: 0;
+  align-items: center;
+  justify-content: center;
+}
+.main .info .video-mask-inner-wrapper:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  padding: 5px;
+  border-radius: 15px;
+  background: linear-gradient(
+    140.24deg,
+    #fe53bb 15.06%,
+    rgba(158, 149, 196, 0) 45.93%,
+    rgba(106, 185, 202, 0) 60.84%,
+    #09fbd3 86.66%
+  );
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+}
+
+.main .info .videos {
+  width: 760px;
+  height: 366px;
+  display: none;
+  margin: auto;
 }
 
 .main .info p {
@@ -491,6 +559,26 @@ export default {
   font-family: Magistral-Book;
   text-transform: uppercase;
   display: none;
+}
+
+@media only screen and (max-width: 1080px) {
+  .main .info .video-mask {
+    padding: 0 0.2rem;
+  }
+
+  .main .info .video-mask-inner-wrapper {
+    height: 46vw;
+  }
+
+  .main .info .video-mask-inner-wrapper img {
+    width: 10vw;
+    height: 10vw;
+  }
+
+  .main .info .videos {
+    width: 90vw;
+    height: 45vw;
+  }
 }
 
 @media only screen and (max-width: 767px) {
