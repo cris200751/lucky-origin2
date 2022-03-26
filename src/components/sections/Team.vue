@@ -141,22 +141,22 @@ export default {};
     padding: 0 0.7rem;
   }
 
-  #team .team-list .team-item .new-right {
-    font-size: 16px;
-    line-height: 24px;
+  #team .team-list .team-item .right {
+    font-size: 18px;
+    line-height: 20px;
   }
 }
 
 @media only screen and (max-width: 900px) {
-#team .team-list .team-item .new-right {
+#team .team-list .team-item .right {
   font-size: 16px;
-  line-height: 18px;
+  line-height: 20px;
 }
 
 }
 
 @media only screen and (max-width: 767px) {
-#team .team-list .team-item .new-right {
+#team .team-list .team-item .right {
   font-size: 14px;
   line-height: 18px;
 }

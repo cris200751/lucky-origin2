@@ -113,13 +113,25 @@ export default {
 }
 
 @media only screen and (max-width: 670px) {
+  .title {
+    font-size: 30px;
+  }
+  
+  .section-container {
+    padding-top: 130px;
+    padding-bottom: 100px;
+    background: url("../../assets/images/social-media-background-mobile.png");
+    background-size: 100% 100%;
+    background-position: center;
+  }
+
   .list-social-network {
     justify-content: space-around;
     flex-wrap: wrap;
   }
 
   .social-network  {
-    width: calc(100% / 3);
+    width: calc(100% / 2);
     margin-right: 0;
   }
 

@@ -48,4 +48,14 @@ export default {};
     padding: 0 0.7rem;
   }
 }
+
+@media only screen and (max-width: 480px) {
+  .section-container { 
+    padding-top: 33px;
+    padding-bottom: 30px;
+    background: url("../../assets/images/sportsbook-background-mobile.png");
+    background-size: cover;
+    background-position: center;
+  }
+}
 </style>

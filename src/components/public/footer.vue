@@ -50,6 +50,66 @@
       </div>
     </div> -->
     <div class="bottom">
+      <div class="new-left">
+        <img class="img" src="../../../static/images/Logofooter.png" />
+        <div class="right links">
+          <ul>
+            <li
+              @click="jumpclick(' https://twitter.com/Lucky_Metaverse')"
+              class="social-network"
+            >
+              <img class="no-color" src="@/assets/images/twitter-no-color.png" />
+              <img class="color" src="@/assets/images/twitter.png" />
+            </li>
+            <li
+              @click="
+                jumpclick('https://www.facebook.com/LuckyMetaverse')
+              "
+              class="social-network"
+            >
+              <img class="no-color" src="@/assets/images/facebook-no-color.png" />
+              <img class="color" src="@/assets/images/facebook.png" />
+            </li>
+            <li
+              @click="jumpclick('https://www.instagram.com/luckymeta_official')"
+              class="social-network"
+            >
+              <img
+                class="no-color"
+                src="@/assets/images/instagram-no-color.png"
+              />
+              <img class="color" src="@/assets/images/instagram.png" />
+            </li>
+          </ul>
+          <ul>
+            <li
+              @click="jumpclick('https://discord.gg/UqH7GwwV89')"
+              class="social-network"
+            >
+              <img class="no-color" src="@/assets/images/discord-no-color.png" />
+              <img class="color" src="@/assets/images/discord.png" />
+            </li>
+            <li
+              @click="
+                jumpclick(
+                  'https://www.youtube.com/channel/UCl66czQcUxBU-iZ9yYjBclA'
+                )
+              "
+              class="social-network"
+            >
+              <img class="no-color" src="@/assets/images/youtube-no-color.png" />
+              <img class="color" src="@/assets/images/youtube.png" />
+            </li>
+            <li
+              @click="jumpclick('https://t.me/luckymetaverse')"
+              class="social-network"
+            >
+              <img class="no-color" src="@/assets/images/telegram-no-color.png" />
+              <img class="color" src="@/assets/images/telegram.png" />
+            </li>
+          </ul>
+        </div>
+      </div>
       <div class="left">
         <img src="../../../static/images/Logofooter.png" />
         <p>{{$t('COPYRIGHT')}} © luckymeta 2022</p>
@@ -72,6 +132,7 @@
           <span>{{$t('PRIVACYPOLICY')}}</span>
         </div>
       </div>
+      <p class="new-right">{{$t('COPYRIGHT')}} © luckymeta 2022</p>
       <div class="right">
         <ul>
           <li
@@ -352,6 +413,47 @@ export default {
   display: none;
 }
 
+.footer .bottom .new-right {
+  display: none;
+  text-align: center;
+  font-weight: 500;
+  font-size: 12px;
+  margin-top: 22px;
+}
+
+.footer .bottom .new-left {
+  display: none;
+}
+
+.footer .bottom .new-left {
+  justify-content: center;
+  align-items: center;
+}
+
+.footer .bottom .new-left .img {
+  width: 24%;
+  margin-right: 31px;
+}
+
+.footer .bottom .new-left .links {
+  width: 40%;
+}
+
+.footer .bottom .new-left .links ul {
+  width: 100%;
+  display: flex;
+}
+
+.footer .bottom .new-left .links ul li { 
+  width: calc(100% / 3);
+  height: 50%;
+}
+
+.footer .bottom .new-left .links ul li img {
+  width: 86%;
+  height: 86%;
+}
+
 @media only screen and (max-width: 767px) {
   .footer {
     margin-top: -1px;
@@ -471,6 +573,22 @@ export default {
     width: 40px;
     height: 40px;
   }
+  .footer .bottom .left {
+    display: none;
+  }
+  .footer .bottom>.right {
+    display: none;
+  }
+
+  .footer .bottom .new-right {
+    display: block;
+  }
+
+  .footer .bottom .new-left {
+    display: flex;
+  }
+
+  
 }
 
 @media only screen and (max-width: 440px) {
