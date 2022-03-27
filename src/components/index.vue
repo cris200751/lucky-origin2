@@ -77,7 +77,7 @@
             <!-- <p>{{ $t("info1") }}</p>
             <p>{{ $t("info2") }}</p>
             <p>{{ $t("info3") }}</p> -->
-            <div class="video-mask">
+            <div ref="video-mask" class="video-mask">
               <a ref="video-link" href="#" @click.prevent="handleVideo">
                 <div class="video-mask-inner-wrapper">
                   <img
@@ -89,7 +89,7 @@
               </a>
             </div>
             <video ref="video" class="videos" controls>
-              <!-- <source src="/static/media/Keynote.27eb45c.mp4" type="video/mp4" /> -->
+              <source src="/static/media/comp.mp4" type="video/mp4" />
               Your browser does not support the video tag.
             </video>
           </div>
@@ -181,9 +181,9 @@ export default {
   created() {},
   methods: {
     handleVideo() {
-      // this.$refs["video-link"].style.display = "none";
-      // this.$refs.video.style.display = "block";
-      // this.$refs.video.play();
+      this.$refs["video-mask"].style.display = "none";
+      this.$refs.video.style.display = "block";
+      this.$refs.video.play();
     },
     allScroll() {
       var scrollTop =
